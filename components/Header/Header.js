@@ -127,7 +127,7 @@ const Header = ({ bgColor }) => {
             </li>
             <li>
               <Link
-                href="/membership"
+                href="/"
                 className="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
