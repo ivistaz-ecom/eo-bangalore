@@ -26,11 +26,11 @@ const MyEOGroups = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="flex justify-between w-full p-5 flex-grow text-lg font-semibold">
+                <div className="flex justify-between w-full p-3 md:p-5 flex-grow text-lg font-semibold">
                   <p className="w-3/4">{item.desc}</p>
                   <Link href={item.link} target="_blank">
                     <div className="flex gap-2 items-center">
-                      <span className="p-1 bg-[#25D366] rounded-full text-white md:text-xl">
+                      <span className="p-1 bg-[#25D366] rounded-full text-white text-lg md:text-xl">
                         <FaWhatsapp />
                       </span>
                       <p className="text-sm md:text-xl">JOIN NOW</p>

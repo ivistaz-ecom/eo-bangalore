@@ -73,11 +73,11 @@ const HaveAQuery = () => {
                 alt=""
               />
               <h3 className="font-semibold text-2xl md:text-3xl text-[#232526]">
-                Chat with us
+                Location
               </h3>
               <p className="text-base md:text-lg text-[#232526]">
-                Please fill out our contact form and our support representative
-                will get in touch with you shortly.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum
               </p>
             </div>
           </div>

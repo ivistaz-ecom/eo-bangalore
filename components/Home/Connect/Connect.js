@@ -4,7 +4,7 @@ import React from 'react'
 const Connect = () => {
   return (
     <div className="flex flex-col md:flex-row mb-3">
-      <div className="w-full md:w-1/2 bg-[url('/home/connect.png')] h-[684px] bg-cover bg-center flex justify-center items-center">
+      <div className="w-full md:w-1/2 bg-[url('/home/connect.png')] h-[400px] md:h-[684px] bg-cover bg-center flex justify-center items-center">
         <div className="text-white text-3xl md:text-5xl font-semibold flex flex-col items-center md:items-start">
           <h3>Connect.</h3>
           <h3>Learn.</h3>
@@ -12,7 +12,7 @@ const Connect = () => {
           <Image src="/home/liveTheLife.png" width={373} height={64} alt="" />
         </div>
       </div>
-      <div className="w-full md:w-1/2 bg-[#4257E1] h-[684px] flex items-center">
+      <div className="w-full md:w-1/2 bg-[#4257E1] h-[400px] md:h-[684px] flex items-center">
         <div className="text-white flex flex-col items-center md:items-start gap-5 text-center md:text-start p-3 md:ps-24">
           <h3 className="text-3xl md:text-5xl font-semibold md:w-1/3">
             Join an evergrowing community.
