@@ -5,7 +5,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const Header = ({ bgColor }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen)
+  }
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen)
@@ -33,7 +38,7 @@ const Header = ({ bgColor }) => {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-dropdown"
           aria-expanded="false"
-          onClick={toggleDropdown}
+          onClick={toggleNavbar}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -53,9 +58,9 @@ const Header = ({ bgColor }) => {
           </svg>
         </button>
         <div
-          className={`hidden w-full md:block md:w-auto ${
-            dropdownOpen ? 'block' : ''
-          }`}
+          className={`${
+            navbarOpen ? 'block' : 'hidden'
+          } w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0">
@@ -122,7 +127,7 @@ const Header = ({ bgColor }) => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/membership"
                 className="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >

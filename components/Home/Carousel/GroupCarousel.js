@@ -38,8 +38,8 @@ function GroupCarousel() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
@@ -48,33 +48,33 @@ function GroupCarousel() {
   }
 
   return (
-    <div className="slider-container ps-[90px]">
+    <div className="slider-container md:px-10 lg:px-20 xl:px-32">
       <Slider {...settings}>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image01.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image02.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image03.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image04.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image05.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image06.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image07.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image08.png" width={300} height={210} alt="" />
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/MyEOGroup/image09.png" width={300} height={210} alt="" />
         </div>
       </Slider>

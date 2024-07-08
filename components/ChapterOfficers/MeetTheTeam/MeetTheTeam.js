@@ -4,15 +4,15 @@ import React from 'react'
 
 const MeetTheTeam = () => {
   return (
-    <div className="py-24 bg-[#EAEAEA]">
+    <div className="py-10 md:py-24 bg-[#EAEAEA]">
       <h3 className="font-semibold text-5xl text-[#4257E1] text-center">
         Meet the team
       </h3>
       <p className="text-[#232526] text-lg text-center mt-3">
         Get to know the people behind EO Bangalore.
       </p>
-      <div className="mt-16 flex justify-center">
-        <ul className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="mt-10 md:mt-16 flex justify-center">
+        <ul className="max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {myEOTeam.map((item) => {
             return (
               <li key={item.id}>

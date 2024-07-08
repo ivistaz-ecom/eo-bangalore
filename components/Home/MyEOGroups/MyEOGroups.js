@@ -5,9 +5,9 @@ const MyEOGroups = () => {
   return (
     <div className="bg-[url('/home/myEOGroup.png')] bg-cover bg-center h-screen">
       <div className="max-w-screen-xl mx-auto flex flex-col h-full">
-        <div className="text-white flex flex-col items-center gap-5 pt-24">
-          <h3 className="font-semibold text-5xl">My EO Groups</h3>
-          <p className="text-xl w-1/2 text-center">
+        <div className="text-white flex flex-col items-center gap-5 pt-24 p-3">
+          <h3 className="font-semibold text-3xl md:text-5xl">My EO Groups</h3>
+          <p className="text-xl md:w-1/2 text-center">
             If you’re a founder or co-founder, majority shareholder or a partner
             then we’d like to hear from you.
           </p>
