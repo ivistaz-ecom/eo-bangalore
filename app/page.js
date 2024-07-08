@@ -30,7 +30,6 @@ export default function Home() {
       <Connect />
       <MyEOGroups />
       <GetInTouch />
-      <Footer />
     </>
   )
 }

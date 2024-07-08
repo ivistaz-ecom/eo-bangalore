@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import Script from 'next/script'
+import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body>
         {children}
+        <Footer />
         <Script src="../path/to/flowbite/dist/flowbite.min.js"></Script>
         <Script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></Script>
       </body>

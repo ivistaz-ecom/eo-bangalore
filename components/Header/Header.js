@@ -1,18 +1,21 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-const Header = () => {
+const Header = ({ bgColor }) => {
   return (
-    <nav class="border-b border-slate-300 dark:bg-gray-900 dark:border-gray-700">
+    <nav
+      class={`border-b bg-[${bgColor}] border-slate-300 dark:bg-gray-900 dark:border-gray-700`}
+    >
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
             src="home/logo.svg"
             height={51}
             width={196}
             alt="EO Bengaluru"
           />
-        </a>
+        </Link>
         <button
           data-collapse-toggle="navbar-dropdown"
           type="button"
@@ -40,19 +43,19 @@ const Header = () => {
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0">
             <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+              <Link
+                href="/"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
               <button
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 text-white hover:text-blue-700 md:p-0 md:w-auto"
+                class="flex items-center justify-between w-full py-2 px-3 text-white md:p-0 md:w-auto"
               >
                 ABOUT US{' '}
                 <svg
@@ -100,49 +103,50 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+              <Link
+                href="/membership"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 MEMBERSHIP
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+              <Link
+                href="/chapter-officers"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 CHAPTER OFFICERS
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+                href="/my-eo"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 MY EO
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+              <Link
+                href="https://www.rie2025.com/"
+                target="_blank"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 RIE RIEMIX
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-lg text-white md:p-0 hover:text-blue-700"
+              <Link
+                href="/contact-us"
+                class="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
                 CONTACT US
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
