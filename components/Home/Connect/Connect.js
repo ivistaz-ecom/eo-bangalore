@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Connect = () => {
@@ -21,9 +22,11 @@ const Connect = () => {
             If you’re a founder or co-founder, majority shareholder or a partner
             then we’d like to hear from you.
           </p>
-          <button className="bg-white text-[#4257E1] px-6 py-3">
-            Connect with us
-          </button>
+          <Link href="/contact-us">
+            <button className="bg-white text-[#4257E1] px-6 py-3">
+              Connect with us
+            </button>
+          </Link>
         </div>
       </div>
     </div>

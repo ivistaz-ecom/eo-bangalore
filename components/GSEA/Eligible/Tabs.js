@@ -58,8 +58,8 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className="flex">
-      <div className="w-1/2 p-4">
+    <div className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 p-4">
         <h2 className="text-2xl font-semibold">{tabData[activeTab].title}</h2>
         <div className="mt-4 text-lg h-[275px]">
           {tabData[activeTab].content}
@@ -68,7 +68,7 @@ const Tabs = () => {
           {tabData.map((tab, index) => (
             <button
               key={index}
-              className={`block text-left w-4/6 py-4 px-4 mb-2 border ${
+              className={`block text-left w-full md:w-4/6 py-4 px-4 mb-2 border ${
                 activeTab === index
                   ? 'bg-blue-600 text-white'
                   : 'bg-white text-blue-600 border-blue-600'
@@ -80,7 +80,7 @@ const Tabs = () => {
           ))}
         </div>
       </div>
-      <div className="w-1/2 p-4">
+      <div className="md:w-1/2 p-4">
         <img
           src={tabData[activeTab].image}
           alt={tabData[activeTab].title}

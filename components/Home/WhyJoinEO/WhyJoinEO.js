@@ -1,5 +1,6 @@
 import { whyJoinEOData } from '@/utils/data'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const WhyJoinEO = () => {
@@ -26,9 +27,11 @@ const WhyJoinEO = () => {
             )
           })}
         </ul>
-        <button className="bg-[#4257E1] px-6 py-3 self-center text-white mt-4">
-          Know more
-        </button>
+        <Link href="/what-is-eo" className="self-center">
+          <button className="bg-[#4257E1] px-6 py-3 text-white mt-4">
+            Know more
+          </button>
+        </Link>
       </div>
     </div>
   )

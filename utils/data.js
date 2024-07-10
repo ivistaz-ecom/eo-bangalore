@@ -473,21 +473,34 @@ export const faqData = [
   },
   {
     id: 2,
-    title: 'What are the prizes for GSEA at the global level?',
+    title:
+      'Aside from the prize money, how does winning GSEA benefit student entrepreneurs?',
     content:
       'Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.',
   },
   {
     id: 3,
-    title: 'Who is eligible to apply for GSEA?',
+    title: 'Why does GSEA Exist?',
+    content:
+      'EO GSEA supports student entrepreneurs who require much-needed mentorship, recognition and connections to take their businesses to the next level of success.',
+  },
+  {
+    id: 4,
+    title: 'What are the prizes for GSEA at the global level?',
     content:
       'Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.',
   },
   {
-    id: 4,
+    id: 5,
+    title: 'Who is eligible to apply for GSEA?',
+    content:
+      'Undergraduate and graduate* college/university students who own and operate a business for at least six months are eligible to compete. *Graduate students are eligible to apply only if they have continually enrolled in a university following their undergraduate degree and not left school to work on their business or to seek other employment. Exceptions can be made for students who have taken up to one academic year’s break before beginning their postgraduate education.',
+  },
+  {
+    id: 6,
     title: 'Where are the GSEA finals being held?',
     content:
-      'Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.',
+      'Undergraduate and graduate* college/university students who own and operate a business for at least six months are eligible to compete. *Graduate students are eligible to apply only if they have continually enrolled in a university following their undergraduate degree and not left school to work on their business or to seek other employment. Exceptions can be made for students who have taken up to one academic year’s break before beginning their postgraduate education.',
   },
 ]
 

@@ -6,6 +6,7 @@ import MyEOGroups from '@/components/Home/MyEOGroups/MyEOGroups'
 import Welcome from '@/components/Home/Welcome/Welcome'
 import WhyJoinEO from '@/components/Home/WhyJoinEO/WhyJoinEO'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,18 +14,22 @@ export default function Home() {
       <div className="h-[100vh] bg-[url('/home/banner01.png')] bg-cover bg-center text-white flex flex-col mb-3">
         <Header />
         <div className="my-auto">
-          <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-start">
-            <h4 className="w-1/2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard
+          <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-center text-center md:text-start md:items-start">
+            <h4 className="w-full md:w-1/2 text-lg md:text-xl">
+              Exclusive nexus of accomplished entrepreneurs
             </h4>
-            <h1 className="text-5xl font-semibold">
+            <h1 className="text-3xl md:text-5xl font-semibold">
               We Are EO <br /> Bengaluru
             </h1>
-            <button className="bg-[#4257E1] px-6 py-3">Learn more</button>
+            <Link href="/eo-bangalore">
+              <button className="bg-[#4257E1] px-4 py-2 md:px-6 md:py-3">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
       <Welcome />
       <WhyJoinEO />
       <Connect />
