@@ -1,4 +1,15 @@
-const AccordionMenu = ({ title, content, id, isExpanded, toggleExpand }) => {
+const AccordionMenu = ({
+  title,
+  content1,
+  content2,
+  content3,
+  content4,
+  content5,
+  content6,
+  id,
+  isExpanded,
+  toggleExpand,
+}) => {
   return (
     <div>
       <h2 id={`accordion-collapse-heading-${id}`}>
@@ -38,7 +49,12 @@ const AccordionMenu = ({ title, content, id, isExpanded, toggleExpand }) => {
         aria-labelledby={`accordion-collapse-heading-${id}`}
       >
         <div className="p-5">
-          <p className="mb-2 text-[#454545]">{content}</p>
+          <p className="mb-2 text-[#454545]">{content1}</p>
+          <p className="mb-2 text-[#454545]">{content2}</p>
+          <p className="mb-2 text-[#454545]">{content3}</p>
+          <p className="mb-2 text-[#454545] pt-5">{content4}</p>
+          <p className="mb-2 text-[#454545]">{content5}</p>
+          <p className="mb-2 text-[#454545]">{content6}</p>
         </div>
       </div>
     </div>

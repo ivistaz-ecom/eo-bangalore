@@ -19,11 +19,11 @@ const IndustriesServed = () => {
                     width={400}
                     height={285}
                     alt=""
-                    className="transform transition-transform duration-500 group-hover:scale-110"
+                    className="transform transition-transform duration-500 group-hover:scale-110 w-[400px] h-[285px]"
                   />
                 </div>
                 <div className="w-full h-full bg-black/30 absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="text-white border-4 border-white p-20 text-3xl font-semibold">
+                  <span className="text-white border-4 border-white p-20 text-3xl text-center">
                     {item.category}
                   </span>
                 </div>

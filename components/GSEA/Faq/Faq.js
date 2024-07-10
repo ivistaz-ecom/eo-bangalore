@@ -12,11 +12,11 @@ const Faq = () => {
   }
   return (
     <div className="bg-[#4257E1]">
-      <div className="max-w-screen-xl mx-auto py-8 flex flex-col items-center">
-        <h3 className="text-5xl font-semibold text-white">
+      <div className="max-w-screen-xl mx-auto py-8 px-4 md:px-8 flex flex-col items-center">
+        <h3 className="text-3xl md:text-5xl font-semibold text-white text-center">
           FREQUENTLY ASKED QUESTIONS
         </h3>
-        <div className="w-10/12 p-2 rounded-xl mt-10">
+        <div className="w-full md:w-10/12 p-2 rounded-xl mt-10">
           <div
             id="accordion-collapse"
             data-accordion="collapse"
@@ -27,7 +27,12 @@ const Faq = () => {
                 key={item.id}
                 id={item.id}
                 title={item.title}
-                content={item.content}
+                content1={item.content1}
+                content2={item.content2}
+                content3={item.content3}
+                content4={item.content4}
+                content5={item.content5}
+                content6={item.content6}
                 isExpanded={expandedItem === item.id}
                 toggleExpand={toggleExpand}
               />

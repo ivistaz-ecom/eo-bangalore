@@ -214,13 +214,13 @@ export const memberCount = [
 export const industryServedData = [
   {
     id: 1,
-    imageUrl: '/industriesServed/image01.png',
+    imageUrl: '/industriesServed/image01.jpg',
     category: 'Real Estate',
   },
   {
     id: 2,
-    imageUrl: '/industriesServed/image02.png',
-    category: 'Automobile',
+    imageUrl: '/industriesServed/image02.jpg',
+    category: 'Pharmaceutical',
   },
   {
     id: 3,
@@ -228,29 +228,59 @@ export const industryServedData = [
     category: 'Automotive',
   },
   {
-    id: 4,
-    imageUrl: '/industriesServed/image04.png',
-    category: 'Automobile',
-  },
-  {
     id: 5,
     imageUrl: '/industriesServed/image05.png',
-    category: 'Automobile',
+    category: 'Apparel',
   },
   {
     id: 6,
-    imageUrl: '/industriesServed/image06.png',
-    category: 'Automobile',
+    imageUrl: '/industriesServed/image06.jpg',
+    category: 'Manufacturing',
   },
   {
     id: 7,
     imageUrl: '/industriesServed/image07.png',
-    category: 'Automobile',
+    category: 'Distribution',
   },
   {
     id: 8,
     imageUrl: '/industriesServed/image08.png',
-    category: 'Automobile',
+    category: 'Engineering',
+  },
+  {
+    id: 9,
+    imageUrl: '/industriesServed/image09.jpg',
+    category: 'Biotechnology',
+  },
+  {
+    id: 10,
+    imageUrl: '/industriesServed/image10.jpg',
+    category: 'Information Technology',
+  },
+  {
+    id: 11,
+    imageUrl: '/industriesServed/image11.jpg',
+    category: 'Education',
+  },
+  {
+    id: 12,
+    imageUrl: '/industriesServed/image12.jpg',
+    category: 'Hotel',
+  },
+  {
+    id: 13,
+    imageUrl: '/industriesServed/image13.jpg',
+    category: 'Finance and Insurance',
+  },
+  {
+    id: 14,
+    imageUrl: '/industriesServed/image14.jpg',
+    category: 'Legal',
+  },
+  {
+    id: 15,
+    imageUrl: '/industriesServed/image15.jpg',
+    category: 'Transportation',
   },
 ]
 
@@ -468,39 +498,74 @@ export const faqData = [
   {
     id: 1,
     title: 'What is GSEA?',
-    content:
+    content1:
       'The Global Student Entrepreneur Awards (GSEA) is the premier global competition for students who own and operate a business while attending college or university. Nominees compete against their peers from around the world in a series of local and/or national competitions in hopes to qualify for the GSEA Global Finals.',
+    content2: '',
+    content3: '',
+    content4: '',
+    content5: '',
+    content6: '',
   },
   {
     id: 2,
     title:
       'Aside from the prize money, how does winning GSEA benefit student entrepreneurs?',
-    content:
-      'Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.',
+    content1: 'Access to successful entrepreneurs, feedback, mentorship.',
+    content2:
+      'Refined elevator pitches – Going head to head with other business owners and answering tough questions about their business to our judges helps competitors improve their pitch skills and enhance their ability to communicate the value proposition of their business.',
+    content3:
+      'Expanded networks – Competitors will meet other student entrepreneurs from around the world, as well as Entrepreneurs’ Organization (EO) members and our honoured guests.',
+    content4:
+      'Media Exposure. Competitors will receive local and national media attention for themselves and their business.',
+    content5: '',
+    content6: '',
   },
   {
     id: 3,
     title: 'Why does GSEA Exist?',
-    content:
+    content1:
       'EO GSEA supports student entrepreneurs who require much-needed mentorship, recognition and connections to take their businesses to the next level of success.',
+    content2: '',
+    content3: '',
+    content4: '',
+    content5: '',
+    content6: '',
   },
   {
     id: 4,
     title: 'What are the prizes for GSEA at the global level?',
-    content:
-      'Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.',
+    content1:
+      'Prizes are generally a combination of cash and business services and will vary by location.',
+    content2:
+      'At the Global Finals, students will compete for a prize package of US$25,000 in cash with a total prize value of over $40,000, which will include a travel/lodging expense paid trip to compete in the Global Finals. Second place will receive prizes worth US$10,000 and third place will receive prizes worth US$5,000.',
+    content3:
+      'Additional awards are given at the Global Finals for Social Impact, Innovation, and Lessons from the Edge.',
+    content4: 'Local chapter’s prize money are as follows',
+    content5: 'Rs 1 lakh for the winner.',
+    content6: 'Rs 50 thousand for the runner-up.',
   },
   {
     id: 5,
     title: 'Who is eligible to apply for GSEA?',
-    content:
+    content1:
       'Undergraduate and graduate* college/university students who own and operate a business for at least six months are eligible to compete. *Graduate students are eligible to apply only if they have continually enrolled in a university following their undergraduate degree and not left school to work on their business or to seek other employment. Exceptions can be made for students who have taken up to one academic year’s break before beginning their postgraduate education.',
+    content2: '',
+    content3: '',
+    content4: '',
+    content5: '',
+    content6: '',
   },
   {
     id: 6,
     title: 'Where are the GSEA finals being held?',
-    content:
-      'Undergraduate and graduate* college/university students who own and operate a business for at least six months are eligible to compete. *Graduate students are eligible to apply only if they have continually enrolled in a university following their undergraduate degree and not left school to work on their business or to seek other employment. Exceptions can be made for students who have taken up to one academic year’s break before beginning their postgraduate education.',
+    content1:
+      'Qualifying competitions are held in cities and countries worldwide. The 2020 Global Finals competition was held in Cape Town, South Africa. However, due to the Covid-19 pandemic, the 2021 Global Finals were held online for the safety of our participating student entrepreneurs, members and esteemed judges.',
+    content2:
+      '(The physical event is subject to health & safety concerns, and depends on easing of global travel restrictions. If it is not safe to conduct physical awards, the GSEA awards will be conducted via web-conferencing.) The 2023 GSEA finals to be held in Kolkata',
+    content3: '',
+    content4: '',
+    content5: '',
+    content6: '',
   },
 ]
 

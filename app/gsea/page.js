@@ -12,11 +12,23 @@ const page = () => {
   return (
     <div>
       <Header bgColor="#4257E1" />
-      <div className="bg-[#4257E1] h-[60vh] mb-20">
-        <div className="max-w-screen-xl mx-auto py-24 text-center flex flex-col justify-center items-center text-white">
-          <h1 className="text-5xl font-semibold">Video</h1>
+      <div className="mb-20">
+        <div className="max-w-screen-xl mx-auto py-10 flex flex-col justify-center items-center text-white w-full h-full">
+          <div className="relative w-full pb-[56.25%] shadow-xl">
+            {' '}
+            {/* 16:9 Aspect Ratio */}
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EO%20GSEA%20EVENT%202024%20HIGH%20RES.mp4"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
+
       <GlobalStudents />
       <GSEAEvent />
       <VisionMission />

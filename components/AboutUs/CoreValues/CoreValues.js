@@ -10,19 +10,22 @@ const CoreValues = () => {
           Core Values
         </h3>
         <div className="border-2 border-[#FBC835] w-20 mb-3" />
-        <ul className="flex justify-center gap-3">
+        <ul className="flex flex-wrap justify-center gap-3 md:gap-8">
           {coreValuesData.map((item) => {
             return (
-              <li key={item.id} className="flex items-center justify-center">
+              <li
+                key={item.id}
+                className="flex items-center justify-center w-full sm:w-auto"
+              >
                 <div className="p-5 text-center space-y-5 flex flex-col items-center">
                   <Image
                     src={item.iconUrl}
                     width={120}
                     height={120}
-                    className="w-[120px] h-[120px]"
+                    className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]"
                     alt=""
                   />
-                  <p className="text-xl text-[#454545] font-semibold">
+                  <p className="text-lg md:text-xl text-[#454545] font-semibold">
                     {item.title}
                   </p>
                 </div>

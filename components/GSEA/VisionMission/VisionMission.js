@@ -5,7 +5,7 @@ const VisionMission = () => {
   return (
     <div className="mb-10">
       <div className="flex flex-col py-5 mx-auto gap-8">
-        <ul className="flex flex-row justify-center items-center gap-2">
+        <ul className="flex flex-col md:flex-row justify-center items-center gap-2">
           {visionMissionData.map((item) => {
             return (
               <li
@@ -22,7 +22,7 @@ const VisionMission = () => {
                 </div>
 
                 <div
-                  className="flex flex-col border px-5 pt-12 pb-4 -mt-6 w-[536px] h-[220px] rounded-xl"
+                  className="flex flex-col border px-5 pt-12 pb-4 -mt-6 w-[400px] md:w-[536px] h-[220px] rounded-xl"
                   style={{ borderColor: item.borderColor }}
                 >
                   <p className="text-lg text-[#454545] text-center">

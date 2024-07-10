@@ -8,12 +8,12 @@ const page = () => {
     <div>
       <Header bgColor="#4257E1" />
       <div className="bg-[#4257E1]">
-        <div className="max-w-screen-xl mx-auto px-10 py-20 text-center flex flex-col items-center text-white">
-          <h1 className="text-5xl font-semibold mb-7">
+        <div className="max-w-screen-xl mx-auto px-5 md:px-10 py-10 md:py-20 text-center flex flex-col items-center text-white">
+          <h1 className="text-3xl md:text-5xl font-semibold mb-5 md:mb-7">
             Everything About EO Bangalore
           </h1>
-          <div className="border-2 border-[#FBC835] w-20 mb-3" />
-          <p className="text-2xl w-3/4">
+          <div className="border-2 border-[#FBC835] w-16 md:w-20 mb-3" />
+          <p className="text-lg md:text-2xl w-full md:w-3/4">
             Founded in 2001, our Bangalore chapter has grown to include over 130
             members from diverse fields such as IT, Pharma, Manufacturing, and
             Real Estate. Our members bring a wealth of experience and expertise,
