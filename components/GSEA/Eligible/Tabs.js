@@ -61,7 +61,7 @@ const Tabs = () => {
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 p-4">
         <h2 className="text-2xl font-semibold">{tabData[activeTab].title}</h2>
-        <div className="mt-4 text-lg h-[275px]">
+        <div className="mb-4 text-lg h-[325px]">
           {tabData[activeTab].content}
         </div>
         <div className="mt-6">

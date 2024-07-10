@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HaveAQuery = () => {
@@ -65,21 +66,30 @@ const HaveAQuery = () => {
                 will get in touch with you shortly.
               </p>
             </div>
-            <div className="bg-white p-3 flex flex-col gap-3 border-b-4 border-[#4257E1]">
-              <Image
-                src="/contactUs/image03.svg"
-                width={43}
-                height={43}
-                alt=""
-              />
-              <h3 className="font-semibold text-2xl md:text-3xl text-[#232526]">
-                Location
-              </h3>
-              <p className="text-base md:text-lg text-[#232526]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum
-              </p>
-            </div>
+            <Link
+              href="https://maps.google.com/?q=12.971849,77.613235"
+              target="_blank"
+              className=""
+            >
+              <div className="bg-white p-3 flex flex-col gap-3 border-b-4 group border-[#4257E1] hover:shadow-lg transition-shadow duration-300">
+                <div className="relative">
+                  <Image
+                    src="/contactUs/image03.svg"
+                    width={43}
+                    height={43}
+                    alt="Location Icon"
+                    className="transform transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+                <h3 className="font-semibold text-2xl md:text-3xl text-[#232526]">
+                  Location
+                </h3>
+                <p className="text-base md:text-lg text-[#232526]">
+                  ‘Casa Fina’, No 5, Primrose Road, <br />
+                  Bangalore -560025, Karnataka
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
