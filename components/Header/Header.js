@@ -107,27 +107,27 @@ const Header = ({ bgColor }) => {
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/what-is-eo"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       WHAT IS EO
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/eo-bangalore"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       EO BANGALORE
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
               <Link
-                href="/"
+                href="/membership"
                 className="block py-2 px-3 text-lg text-white md:p-0"
                 aria-current="page"
               >
@@ -150,6 +150,15 @@ const Header = ({ bgColor }) => {
                 aria-current="page"
               >
                 MY EO
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/gsea"
+                className="block py-2 px-3 text-lg text-white md:p-0"
+                aria-current="page"
+              >
+                GSEA
               </Link>
             </li>
             <li>

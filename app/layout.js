@@ -20,8 +20,6 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Footer />
-        <Script src="../path/to/flowbite/dist/flowbite.min.js"></Script>
-        <Script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></Script>
       </body>
     </html>
   )
