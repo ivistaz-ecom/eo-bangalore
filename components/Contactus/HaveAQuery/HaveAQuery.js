@@ -122,7 +122,7 @@ const HaveAQuery = () => {
             className="flex flex-col gap-8 w-full md:w-2/5"
             data-aos="fade-left"
           >
-            <div className="bg-white p-3 flex flex-col gap-3 border-b-4 border-[#4257E1]">
+            {/* <div className="bg-white p-3 flex flex-col gap-3 border-b-4 border-[#4257E1]">
               <Image
                 src="/contactUs/image02.svg"
                 width={43}
@@ -136,7 +136,7 @@ const HaveAQuery = () => {
                 Please fill out our contact form and our support representative
                 will get in touch with you shortly.
               </p>
-            </div>
+            </div> */}
             <Link
               href="https://maps.google.com/?q=12.971849,77.613235"
               target="_blank"
@@ -155,6 +155,7 @@ const HaveAQuery = () => {
                   Location
                 </h3>
                 <p className="text-base md:text-lg text-[#232526]">
+                  Registered Address: <br />
                   ‘Casa Fina’, No 5, Primrose Road, <br />
                   Bangalore -560025, Karnataka
                 </p>
