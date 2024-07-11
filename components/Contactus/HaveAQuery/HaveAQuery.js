@@ -62,10 +62,10 @@ const HaveAQuery = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    if (!recaptchaToken) {
-      setError('Please verify that you are not a robot.')
-      return
-    }
+    // if (!recaptchaToken) {
+    //   setError('Please verify that you are not a robot.')
+    //   return
+    // }
 
     setButton('Please Wait')
     setBtnDisabled(true)
