@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+'use client'
+import React, { useState, useEffect } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import ContactUsForm from '@/components/ContactUsForm/ContactUsForm'
 import axios from 'axios'
