@@ -26,7 +26,7 @@ const Header = ({ bgColor }) => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Image
-            src="home/logo.svg"
+            src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/logo.svg"
             height={51}
             width={196}
             alt="EO Bengaluru"

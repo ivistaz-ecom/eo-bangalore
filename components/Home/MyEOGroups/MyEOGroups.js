@@ -3,7 +3,7 @@ import GroupCarousel from '../Carousel/GroupCarousel'
 
 const MyEOGroups = () => {
   return (
-    <div className="bg-[url('/home/myEOGroup.png')] bg-cover bg-center h-[60vh] md:h-screen">
+    <div className="bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/myEOGroup.png')] bg-cover bg-center h-[60vh] md:h-screen">
       <div className="max-w-screen-xl mx-auto flex flex-col h-full">
         <div className="text-white flex flex-col items-center gap-5 pt-24 p-3">
           <h3 className="font-semibold text-3xl md:text-5xl">My EO Groups</h3>

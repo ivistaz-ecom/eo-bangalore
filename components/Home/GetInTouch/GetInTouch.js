@@ -48,7 +48,7 @@ const GetInTouch = () => {
   }
   return (
     <div className="flex flex-col md:flex-row mb-3">
-      <div className="w-full md:w-1/2 bg-cover bg-center bg-[url('/home/getInTouch.png')]">
+      <div className="w-full md:w-1/2 bg-cover bg-center bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/getInTouch.png')]">
         <div className="h-96 md:h-[684px]"></div>
       </div>
       <div className="w-full md:w-1/2 bg-[#232526] flex items-center">

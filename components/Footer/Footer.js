@@ -6,7 +6,12 @@ const Footer = () => {
   return (
     <div className="bg-[#232526]">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-10 pt-20 px-4 md:px-0">
-        <Image src="/home/logo.svg" width={293} height={77} alt="EO Logo" />
+        <Image
+          src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/logo.svg"
+          width={293}
+          height={77}
+          alt="EO Logo"
+        />
         <ul className="flex flex-wrap justify-center gap-4 md:gap-8 text-white text-lg text-center">
           <Link href="/">
             <li>HOME</li>

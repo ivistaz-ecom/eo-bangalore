@@ -7,7 +7,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <div className="h-[50vh] bg-[url('/membership/membershipBanner.png')] bg-cover bg-center text-white flex flex-col">
+      <div className="h-[50vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/membershipBanner.png')] bg-cover bg-center text-white flex flex-col">
         <Header />
         <div className="my-auto">
           <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-center md:items-start text-center md:text-left">

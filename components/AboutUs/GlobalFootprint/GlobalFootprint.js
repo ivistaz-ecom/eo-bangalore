@@ -39,8 +39,8 @@ const GlobalFootprint = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[75vh] bg-[url('/about/banner02.png')] bg-cover bg-center"></div>
-      <div className="w-full h-[75vh] bg-[url('/about/banner03.png')] bg-cover bg-center flex flex-col gap-10 md:gap-20 justify-center items-center px-4">
+      <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] bg-cover bg-center"></div>
+      <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner03.png')] bg-cover bg-center flex flex-col gap-10 md:gap-20 justify-center items-center px-4">
         <div className="flex flex-col items-center gap-5 md:gap-10">
           <h2 className="text-3xl md:text-5xl font-semibold text-gray-500 text-center">
             <span className="text-[#FFD1E6]">Connect </span>

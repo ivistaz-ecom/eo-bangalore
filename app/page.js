@@ -11,7 +11,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <div className="h-[100vh] bg-[url('/home/banner01.png')] bg-cover bg-center text-white flex flex-col mb-3">
+      <div className="h-[100vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner01.png')] bg-cover bg-center text-white flex flex-col mb-3">
         <Header />
         <div className="my-auto">
           <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-center text-center md:text-start md:items-start">

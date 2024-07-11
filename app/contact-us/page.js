@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-      <div className="h-[80vh] bg-[url('/contactUs/image01.png')] bg-cover bg-center text-white flex flex-col mb-8">
+      <div className="h-[80vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/image01.png')] bg-cover bg-center text-white flex flex-col mb-8">
         <Header />
         <div className="my-auto">
           <div className="p-5 text-center">
