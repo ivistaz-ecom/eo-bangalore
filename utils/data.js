@@ -597,37 +597,37 @@ export const faqData = [
 export const applicationProcessData = [
   {
     id: 1,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/01.png',
     title: 'Application',
     desc: 'Apply for EO GSEA Awards to the Kolkata chapter.If selected,move to step 2.',
   },
   {
     id: 2,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/02.png',
     title: 'Screening, Shortlist & Training',
     desc: 'Following the first round of screening by industry experts, 5 candidates will be shortlisted as finalists. Attend forums and training sessions that will prepare you for the Regional Finals.',
   },
   {
     id: 3,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/03.png',
     title: 'Chapter Finals',
     desc: 'Participate in the chapter finals with 10 of the best student entrepreneurs. Being proclaimed EO kolkata’s top 2 would represent us at the national finals.',
   },
   {
     id: 4,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/04.png',
     title: 'National Finals',
     desc: 'The national GSEA finals will be a competition between India’s top 30 student entrepreneurs.',
   },
   {
     id: 5,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/05.png',
     title: 'Global Finals',
     desc: '50 of the world’s top student entrepreneurs will compete for the global GSEA awards!',
   },
   {
     id: 6,
-    iconUrl: '/gsea/dummyIcon.png',
+    iconUrl: '/gsea/application/06.png',
     title: 'Win!',
     desc: 'Become the Global EO GSEA Student Champion by winning the Global GSEA 2022-2023.',
   },
