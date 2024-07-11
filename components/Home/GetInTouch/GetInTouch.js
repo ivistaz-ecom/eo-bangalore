@@ -17,6 +17,24 @@ const GetInTouch = () => {
   const [successMessage, setSuccessMessage] = useState()
   const [button, setButton] = useState('SEND A MESSAGE')
   const [disabled, setBtnDisabled] = useState(false)
+  const [recaptchaToken, setRecaptchaToken] = useState('')
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src =
+      'https://www.google.com/recaptcha/api.js?render=6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ'
+    script.async = true
+    document.body.appendChild(script)
+
+    const timeout = setTimeout(() => {
+      setIsVisible(false)
+    }, 2000)
+
+    return () => {
+      document.body.removeChild(script)
+      clearTimeout(timeout)
+    }
+  })
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -41,39 +59,60 @@ const GetInTouch = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    // if (!recaptchaToken) {
+    //   setError('Please verify that you are not a robot.')
+    //   return
+    // }
+
     setButton('Please Wait')
     setBtnDisabled(true)
+
     if (validate()) {
-      console.log('Validated')
       try {
-        const response = await axios.post(
-          `https://docs.rie2025.com/wp-json/contact-form-7/v1/contact-forms/12/feedback`,
-          formData,
-          {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
+        // Simulating form submission
+
+        // const token = await new Promise((resolve, reject) => {
+        //   window.grecaptcha
+        //     .execute('6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2', {
+        //       action: 'submit',
+        //     })
+        //     .then(resolve)
+        //     .catch(reject)
+        // })
+
+        setTimeout(async () => {
+          // Example of handling form submission with Axios
+          try {
+            const response = await axios.post(
+              'https://docs.rie2025.com/wp-json/contact-form-7/v1/contact-forms/12/feedback',
+              formData,
+              {
+                headers: {
+                  'Content-Type': 'multipart/form-data',
+                },
+              }
+            )
+
+            if (response.data.status === 'mail_sent') {
+              setSuccessMessage('Thank you for your submission!')
+              setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                message: '',
+              })
+              setButton('SEND A MESSAGE')
+              setBtnDisabled(false)
+            } else {
+              setError('An error occurred. Please try again.')
+              setBtnDisabled(false)
+            }
+          } catch (err) {
+            setError('An error occurred. Please try again.')
+            setBtnDisabled(false)
           }
-        )
-        console.log(response)
-
-        if (response.data.status === 'mail_sent') {
-          console.log(response.data.status)
-          setSuccessMessage('Thank you for your submission!')
-
-          setFormData({
-            firstName: '',
-            lastName: '',
-            email: '',
-            message: '',
-          })
-
-          setButton('SEND A MESSAGE')
-          setBtnDisabled(false)
-        } else {
-          setError('An error occurred. Please try again.')
-          setBtnDisabled(false)
-        }
+        }, 1500) // Simulating delay for demo purposes
       } catch (err) {
         setError('An error occurred. Please try again.')
         setBtnDisabled(false)
