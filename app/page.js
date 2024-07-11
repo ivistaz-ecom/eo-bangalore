@@ -27,7 +27,7 @@ export default function Home() {
               Exclusive nexus of accomplished entrepreneurs
             </h4>
             <h1 className="text-3xl md:text-5xl font-semibold">
-              We Are EO <br /> Bengaluru
+              We Are EO <br /> Bangalore
             </h1>
             <Link href="/eo-bangalore">
               <button className="bg-[#4257E1] px-4 py-2 md:px-6 md:py-3">
