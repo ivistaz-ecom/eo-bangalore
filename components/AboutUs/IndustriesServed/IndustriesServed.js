@@ -23,9 +23,11 @@ const IndustriesServed = () => {
                   />
                 </div>
                 <div className="w-full h-full bg-black/30 absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="text-white border-4 border-white p-20 text-3xl text-center">
-                    {item.category}
-                  </span>
+                  <div className="border-4 border-white w-[380px] h-[260px] flex items-center justify-center">
+                    <span className="text-white text-3xl text-center">
+                      {item.category}
+                    </span>
+                  </div>
                 </div>
               </li>
             )

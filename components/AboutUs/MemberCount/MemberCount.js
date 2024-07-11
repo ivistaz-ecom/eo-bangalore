@@ -1,5 +1,8 @@
+'use client'
+
 import { memberCount } from '@/utils/data'
 import React from 'react'
+import CountUp from 'react-countup'
 
 const MemberCount = () => {
   return (
@@ -12,7 +15,7 @@ const MemberCount = () => {
           >
             <div className="p-5 text-center space-y-5">
               <h4 className="text-4xl md:text-6xl font-semibold text-[#4257E1]">
-                {item.count}
+                <CountUp end={item.count} duration={2.5} />
               </h4>
               <p className="text-lg md:text-xl text-[#232526]">{item.title}</p>
             </div>
