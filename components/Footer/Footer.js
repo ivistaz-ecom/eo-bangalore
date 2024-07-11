@@ -38,6 +38,7 @@ const Footer = () => {
               <li>CONTACT US</li>
             </Link>
           </ul>
+
           <hr className="w-full mt-5" />
         </div>
         <p className="text-white text-lg text-center p-6">

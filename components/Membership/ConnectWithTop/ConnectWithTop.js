@@ -15,6 +15,11 @@ const ConnectWithTop = () => {
           <h3 className="text-center text-xl md:text-3xl text-white font-semibold">
             You're only a few steps away from discovering the power of EO.
           </h3>
+          <Link href="/contact-us">
+            <button className="bg-[#4257E1] text-white text-xl px-4 py-2 md:px-6 md:py-3">
+              Connect With Us
+            </button>
+          </Link>
         </div>
       </div>
       <div className="bg-black/45 absolute inset-0"></div>

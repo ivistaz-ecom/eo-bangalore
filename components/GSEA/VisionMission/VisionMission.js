@@ -23,7 +23,7 @@ const VisionMission = () => {
                 </div>
 
                 <div
-                  className="flex flex-col border px-5 pt-12 pb-4 -mt-6 w-[400px] md:w-[536px] h-[220px] rounded-xl"
+                  className="flex flex-col border px-5 pt-12 pb-4 -mt-6 w-[300px] md:w-[536px] md:h-[200px] rounded-xl"
                   style={{ borderColor: item.borderColor }}
                 >
                   <p className="text-lg text-[#454545] text-center">

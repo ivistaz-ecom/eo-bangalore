@@ -318,43 +318,36 @@ export const membershipCriteriaData = [
   {
     id: 1,
     tag: 'Role',
-    desc1: '- Founder/Co-Founder',
-    desc2: '- Majority Shareholder',
-    desc3: '- Controlling Partners',
-    desc4: '- Significant Partner (in Control)',
+    desc: [
+      'Founder/Co-Founder',
+      'Majority Shareholder',
+      'Controlling Partners',
+      'Significant Partner (in Control)',
+    ],
   },
   {
     id: 2,
     tag: 'Turnover',
-    desc1: '- Annual turnover of $1,000,000',
-    desc2: '',
-    desc3: '',
-    desc4: '',
+    desc: ['Annual turnover of $1,000,000'],
   },
   {
     id: 3,
     tag: 'Age',
-    desc1: '- Atleast 27 years of age',
-    desc2: '- No max restriction',
-    desc3: '',
-    desc4: '',
+    desc: ['Atleast 27 years of age', 'No max restriction'],
   },
   {
     id: 4,
     tag: 'Work Experience',
-    desc1: '- At least 4 years of experience',
-    desc2: '',
-    desc3: '',
-    desc4: '',
+    desc: ['At least 4 years of experience'],
   },
 ]
 
 export const memberBenefitData = [
   {
     id: 1,
-    title: 'Forum',
+    title: 'Connections',
     textColor: '#40B8A2',
-    desc: 'What would you give for the ability to tap into a group of 7-10 fellow business owners who can open your eyes to options and solutions based on their real-life experiences?',
+    desc: 'What would you give for the ability to tap into a group of 6-10 fellow business owners who can open your eyes to options and solutions based on their real-life experiences?',
     data: 'fade-right',
   },
   {
@@ -366,16 +359,16 @@ export const memberBenefitData = [
   },
   {
     id: 3,
-    title: 'Events',
+    title: 'Global and Regional Events',
     textColor: '#E87A66',
-    desc: 'Held throughout the year, EO events offer provocative learning programs, renowned speakers and amazing social venues.',
+    desc: 'A variety of regional and global events are held, featuring educational programmes, worldwide explorations and social events, providing an opportunity for members to engage with entrepreneurs from all regions.',
     data: 'fade-right',
   },
   {
     id: 4,
     title: 'Chapter Events',
     textColor: '#454545',
-    desc: 'As an EO member, you will be invited to attend one-of-a-kind chapter events built around learning and engagement. You’ll be building relationships virtually or in-person with other entrepreneurs in your area.',
+    desc: 'As an EO member, you will be invited to attend one-of-a-kind local chapter events built around learning and engagement. You’ll be building relationships virtually or in-person with other entrepreneurs in your area.',
     data: 'fade-left',
   },
   {
@@ -387,7 +380,7 @@ export const memberBenefitData = [
   },
   {
     id: 6,
-    title: 'Path of Leadership',
+    title: 'Leadership Training',
     textColor: '#88BD43',
     desc: 'For more than 30 years, EO has been helping entrepreneurs grow as leaders in EO and their professional lives.',
     data: 'fade-left',
@@ -396,7 +389,7 @@ export const memberBenefitData = [
     id: 7,
     title: 'My EO',
     textColor: '#DD0062',
-    desc: 'Looking to share your passions with other entrepreneurs? MyEO provides endless possibilities for new groups, events and Forums to be created around specific interests or passions. Through MyEO, you can personalize your EO experience and connect with peers around the world.',
+    desc: 'MyEO enables entrepreneurs to curate a tailor-made community and member experience that suits their individual business interests and personal passions.',
     data: 'fade-right',
   },
 ]
@@ -435,25 +428,25 @@ export const coreValuesData = [
   },
   {
     id: 3,
-    iconUrl: '/about/CoreValues/icon03.png',
-    title: 'Make a Mark',
+    iconUrl: '/about/CoreValues/07.png',
+    title: 'Think and Grow',
   },
   {
     id: 4,
     iconUrl: '/about/CoreValues/icon04.png',
     title: 'Trust and Respect',
   },
-  {
-    id: 5,
-    iconUrl: '/about/CoreValues/icon05.png',
-    title: 'Lifetime Experiences',
-  },
+  // {
+  //   id: 5,
+  //   iconUrl: '/about/CoreValues/icon05.png',
+  //   title: 'Lifetime Experiences',
+  // },
 ]
 
 export const globalFootprintData = [
   {
     id: 1,
-    count: '60+',
+    count: '86+',
     title: 'COUNTRIES',
   },
   {
@@ -473,8 +466,8 @@ export const globalFootprintData = [
   },
   {
     id: 5,
-    count: '13',
-    title: 'NEW CHAPTERS (IN 2022)',
+    count: '32',
+    title: 'NEW CHAPTERS (2023-24)',
   },
   {
     id: 6,
@@ -491,17 +484,17 @@ export const gseaEventData = [
   },
   {
     id: 2,
-    imageUrl: '/gsea/image02.png',
+    imageUrl: '/gsea/image04.png',
     data: 'fade-left',
   },
   {
     id: 3,
-    imageUrl: '/gsea/image03.png',
+    imageUrl: '/gsea/image02.png',
     data: 'fade-right',
   },
   {
     id: 4,
-    imageUrl: '/gsea/image04.png',
+    imageUrl: '/gsea/image03.png',
     data: 'fade-left',
   },
 ]
@@ -592,7 +585,7 @@ export const faqData = [
     content1:
       'Qualifying competitions are held in cities and countries worldwide. The 2020 Global Finals competition was held in Cape Town, South Africa. However, due to the Covid-19 pandemic, the 2021 Global Finals were held online for the safety of our participating student entrepreneurs, members and esteemed judges.',
     content2:
-      '(The physical event is subject to health & safety concerns, and depends on easing of global travel restrictions. If it is not safe to conduct physical awards, the GSEA awards will be conducted via web-conferencing.) The 2023 GSEA finals to be held in Kolkata',
+      '(The physical event is subject to health & safety concerns, and depends on easing of global travel restrictions. If it is not safe to conduct physical awards, the GSEA awards will be conducted via web-conferencing.)',
     content3: '',
     content4: '',
     content5: '',
@@ -605,7 +598,7 @@ export const applicationProcessData = [
     id: 1,
     iconUrl: '/gsea/application/01.png',
     title: 'Application',
-    desc: 'Apply for EO GSEA Awards to the Kolkata chapter.If selected,move to step 2.',
+    desc: 'Apply for EO GSEA Awards.',
   },
   {
     id: 2,
@@ -617,7 +610,7 @@ export const applicationProcessData = [
     id: 3,
     iconUrl: '/gsea/application/03.png',
     title: 'Chapter Finals',
-    desc: 'Participate in the chapter finals with 10 of the best student entrepreneurs. Being proclaimed EO kolkata’s top 2 would represent us at the national finals.',
+    desc: 'Participate in the chapter finals with 10 of the best student entrepreneurs.',
   },
   {
     id: 4,
@@ -635,6 +628,6 @@ export const applicationProcessData = [
     id: 6,
     iconUrl: '/gsea/application/06.png',
     title: 'Win!',
-    desc: 'Become the Global EO GSEA Student Champion by winning the Global GSEA 2022-2023.',
+    desc: 'Become the Global EO GSEA Student Champion by winning the Global GSEA.',
   },
 ]

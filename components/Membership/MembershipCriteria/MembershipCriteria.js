@@ -24,10 +24,11 @@ const MembershipCriteria = () => {
                 </p>
 
                 <div className="flex flex-col border border-[#4257E1] px-5 pt-16 pb-4 -mt-14 w-[260px] h-[230px]">
-                  <span className="text-[#232526]">{item.desc1}</span>
-                  <span className="text-[#232526]">{item.desc2}</span>
-                  <span className="text-[#232526]">{item.desc3}</span>
-                  <span className="text-[#232526]">{item.desc4}</span>
+                  <ul className="p-2 m-2 list-disc text-[#232526]">
+                    {item.desc.map((descs, index) => {
+                      return <li key={index}>{descs}</li>
+                    })}
+                  </ul>
                 </div>
               </li>
             )
