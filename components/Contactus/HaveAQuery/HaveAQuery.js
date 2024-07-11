@@ -24,7 +24,7 @@ const HaveAQuery = () => {
   useEffect(() => {
     const script = document.createElement('script')
     script.src =
-      'https://www.google.com/recaptcha/api.js?render=6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2'
+      'https://www.google.com/recaptcha/api.js?render=6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ'
     script.async = true
     document.body.appendChild(script)
 
@@ -76,7 +76,7 @@ const HaveAQuery = () => {
 
         const token = await new Promise((resolve, reject) => {
           window.grecaptcha
-            .execute('6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ', {
+            .execute('6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2', {
               action: 'submit',
             })
             .then(resolve)
