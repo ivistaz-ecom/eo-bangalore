@@ -164,7 +164,7 @@ const HaveAQuery = () => {
         </div>
         <div className="mt-8">
           <ReCAPTCHA
-            sitekey="6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ"
+            sitekey="6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2"
             onChange={handleCaptchaVerify}
             size="invisible"
           />
