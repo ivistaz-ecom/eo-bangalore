@@ -18,7 +18,24 @@ const HaveAQuery = () => {
   const [successMessage, setSuccessMessage] = useState()
   const [button, setButton] = useState('SEND A MESSAGE')
   const [disabled, setBtnDisabled] = useState(false)
-  const [captchaToken, setCaptchaToken] = useState(null)
+  const [recaptchaToken, setRecaptchaToken] = useState('')
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src =
+      'https://www.google.com/recaptcha/api.js?render=6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2'
+    script.async = true
+    document.body.appendChild(script)
+
+    const timeout = setTimeout(() => {
+      setIsVisible(false)
+    }, 2000)
+
+    return () => {
+      document.body.removeChild(script)
+      clearTimeout(timeout)
+    }
+  })
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -43,8 +60,9 @@ const HaveAQuery = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!captchaToken) {
-      alert('Please verify the captcha')
+
+    if (!recaptchaToken) {
+      setError('Please verify that you are not a robot.')
       return
     }
 
@@ -54,6 +72,16 @@ const HaveAQuery = () => {
     if (validate()) {
       try {
         // Simulating form submission
+
+        const token = await new Promise((resolve, reject) => {
+          window.grecaptcha
+            .execute('6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ', {
+              action: 'submit',
+            })
+            .then(resolve)
+            .catch(reject)
+        })
+
         setTimeout(async () => {
           // Example of handling form submission with Axios
           try {
@@ -94,10 +122,6 @@ const HaveAQuery = () => {
       setButton('SEND A MESSAGE')
       setBtnDisabled(false)
     }
-  }
-
-  const handleCaptchaVerify = (token) => {
-    setCaptchaToken(token)
   }
 
   return (
@@ -163,13 +187,7 @@ const HaveAQuery = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-8">
-          <ReCAPTCHA
-            sitekey="6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2"
-            onChange={handleCaptchaVerify}
-            size="invisible"
-          />
-        </div>
+        <div className="mt-8"></div>
       </div>
     </div>
   )
