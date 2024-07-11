@@ -8,6 +8,8 @@ import React from 'react'
 
 import AOS from 'aos'
 import { useEffect } from 'react'
+import ConnectWithTop from '@/components/Membership/ConnectWithTop/ConnectWithTop'
+import NextSeo from '@/components/Seo/Seo'
 
 const page = () => {
   useEffect(() => {
@@ -15,6 +17,12 @@ const page = () => {
   })
   return (
     <>
+      <NextSeo
+        title="EO Bengaluru Membership - Join a Global Network of Entrepreneurs"
+        description="Become a member of EO Bengaluru and unlock a world of opportunities. Enjoy exclusive access to events, resources, and a supportive community of entrepreneurs. Learn more about the benefits of membership and how to join EO Bengaluru."
+        path=""
+        metaImage=""
+      />
       <div className="h-[50vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/membershipBanner.png')] bg-cover bg-center text-white flex flex-col">
         <Header />
         <div className="my-auto" data-aos="fade-up">
@@ -27,6 +35,7 @@ const page = () => {
       <WhyJoinEO />
       <MembershipCriteria />
       <MemberBenefit />
+      <ConnectWithTop />
     </>
   )
 }

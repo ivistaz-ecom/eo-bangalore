@@ -8,6 +8,7 @@ import Header from '@/components/Header/Header'
 import React from 'react'
 import AOS from 'aos'
 import { useEffect } from 'react'
+import NextSeo from '@/components/Seo/Seo'
 
 const page = () => {
   useEffect(() => {
@@ -16,6 +17,12 @@ const page = () => {
 
   return (
     <div>
+      <NextSeo
+        title="What is EO - Entrepreneurs' Organization Bengaluru"
+        description="Discover what EO (Entrepreneurs' Organization) is and how it supports entrepreneurs worldwide. Learn about EO Bengaluru's mission, values, and the benefits of joining a global network dedicated to entrepreneurial growth and success."
+        path=""
+        metaImage=""
+      />
       <Header bgColor="#4257E1" />
       <div className="bg-[#4257E1]">
         <div

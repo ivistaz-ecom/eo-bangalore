@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import '../styles/globals.css'
-import Script from 'next/script'
 import Footer from '@/components/Footer/Footer'
 import 'aos/dist/aos.css'
 
@@ -22,10 +21,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
-          rel="stylesheet"
-        />
       </head>
       <body>
         {children}

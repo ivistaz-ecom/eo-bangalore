@@ -93,7 +93,7 @@ const HaveAQuery = () => {
           Have A Query?
         </h3>
         {successMessage}
-        <div className="flex flex-col md:flex-row gap-10 md:gap-20">
+        <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-4/6">
             <ContactUsForm
               handleSubmit={handleSubmit}

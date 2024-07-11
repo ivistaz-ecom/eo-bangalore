@@ -404,15 +404,21 @@ export const memberBenefitData = [
 export const globalCommunityData = [
   {
     id: 1,
-    iconUrl: '/about/globalCommunity/icon01.png',
-    title: 'Vision',
-    desc: 'To build the world’s most influential community of entrepreneurs.',
+    iconUrl: '/about/globalCommunity/icon02.png',
+    title: 'Mission',
+    desc: 'To help entrepreneurs achieve their full potential through life-enhancing connections',
   },
   {
     id: 2,
+    iconUrl: '/about/globalCommunity/icon01.png',
+    title: 'Purpose',
+    desc: 'To move the world forward by unlocking the full potential of entrepreneurs',
+  },
+  {
+    id: 3,
     iconUrl: '/about/globalCommunity/icon02.png',
-    title: 'Mission',
-    desc: 'To help engage leading entrepreneurs to learn and grow.',
+    title: 'Ambition',
+    desc: 'To enable transformational growth in our members’ lives',
   },
 ]
 
@@ -420,7 +426,7 @@ export const coreValuesData = [
   {
     id: 1,
     iconUrl: '/about/CoreValues/icon01.png',
-    title: 'Boldly Go',
+    title: 'Think Big, Be Bold',
   },
   {
     id: 2,
@@ -452,12 +458,12 @@ export const globalFootprintData = [
   },
   {
     id: 2,
-    count: '213',
+    count: '223',
     title: 'CHAPTERS',
   },
   {
     id: 3,
-    count: '17,500+',
+    count: '19,000+',
     title: 'MEMBERS',
   },
   {

@@ -22,11 +22,11 @@ export default function Home() {
       <div className="h-[100vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner01.png')] bg-cover bg-center text-white flex flex-col mb-3">
         <Header />
         <div className="my-auto" data-aos="fade-up">
-          <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-center text-center md:text-start md:items-start">
-            <h4 className="w-full md:w-1/2 text-2xl md:text-xl">
+          <div className="max-w-screen-xl mx-auto p-5 flex flex-col gap-5 items-center text-center md:items-start md:text-left">
+            <h4 className="w-full md:w-1/2 text-lg md:text-xl">
               Exclusive nexus of accomplished entrepreneurs
             </h4>
-            <h1 className="text-3xl md:text-7xl font-semibold">
+            <h1 className="text-3xl md:text-5xl font-semibold">
               We Are EO <br /> Bengaluru
             </h1>
             <Link href="/eo-bangalore">

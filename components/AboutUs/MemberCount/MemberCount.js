@@ -7,7 +7,7 @@ import CountUp from 'react-countup'
 const MemberCount = () => {
   return (
     <ul
-      className="flex flex-col md:flex-row justify-center gap-3 my-10 md:my-20"
+      className="flex flex-col md:flex-row justify-center gap-3 my-10 md:my-20 p-16"
       data-aos="fade-down"
     >
       {memberCount.map((item) => {
