@@ -7,8 +7,8 @@ const GlobalFootprint = () => {
   return (
     <>
       <div className="relative" data-aos="zoom-in-up">
-        <div className="bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] h-[75vh] bg-cover bg-center">
-          <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 py-16">
+        <div className="bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] bg-cover bg-center">
+          <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 py-16 px-4 md:px-8">
             <h3 className="font-semibold text-3xl md:text-5xl text-white text-center z-50">
               Global Footprint
             </h3>
@@ -43,6 +43,7 @@ const GlobalFootprint = () => {
             </div>
           </div>
         </div>
+
         <div className="w-full bg-black/40 absolute inset-0 top-0 z-0"></div>
       </div>
       <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner03.png')] bg-cover bg-center flex flex-col gap-10 md:gap-20 justify-center items-center px-4">
@@ -50,14 +51,14 @@ const GlobalFootprint = () => {
           className="flex flex-col items-center gap-5 md:gap-10"
           data-aos="fade-down"
         >
-          <h2 className="text-3xl md:text-5xl font-semibold text-gray-500 text-center">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-500 text-center">
             <span className="text-[#FFD1E6]">Connect </span>
             <span className="font-light">| </span>
             <span className="text-[#3FB8A2]">Belong </span>
             <span className="font-light">| </span>
             <span className="text-[#89BD43]"> Grow</span>
           </h2>
-          <h3 className="text-center text-3xl md:text-5xl text-white font-semibold">
+          <h3 className="text-center text-3xl md:text-4xl lg:text-5xl text-white font-semibold">
             TOGETHER WE <br /> FLOURISH
           </h3>
         </div>
@@ -65,12 +66,12 @@ const GlobalFootprint = () => {
           className="flex flex-col items-center gap-5 md:gap-10 text-white"
           data-aos="fade-up"
         >
-          <p className="text-lg md:text-2xl text-center w-full md:w-4/6">
+          <p className="text-base md:text-lg lg:text-2xl text-center w-full md:w-4/6">
             If you’re a founder or co-founder, majority shareholder or a partner
             then we’d like to hear from you.
           </p>
           <Link href="/contact-us">
-            <button className="bg-[#4257E1] text-lg md:text-xl font-semibold px-4 md:px-6 py-3 md:py-4">
+            <button className="bg-[#4257E1] text-sm md:text-lg lg:text-xl font-semibold px-4 md:px-6 py-2 md:py-3 lg:py-4">
               Reach out to us
             </button>
           </Link>

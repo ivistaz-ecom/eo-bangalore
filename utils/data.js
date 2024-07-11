@@ -172,7 +172,7 @@ export const myEOTeam = [
     id: 9,
     imageUrl: '/team/image08.png',
     name: 'Suraj Sreenath',
-    designation: 'Suraj Sreenath',
+    designation: 'Finance Chair',
   },
   {
     id: 10,
