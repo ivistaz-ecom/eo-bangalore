@@ -20,7 +20,8 @@ const tabData = [
         </p>
       </>
     ),
-    image: '/gsea/tabImage01.png',
+    image:
+      'https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/tabImage01.png',
   },
   {
     title: 'The Business',
@@ -37,7 +38,8 @@ const tabData = [
         <p>Businesses at the idea stage are not eligible.</p>
       </>
     ),
-    image: '/gsea/tabImage02.png',
+    image:
+      'https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/tabImage02.png',
   },
   {
     title: 'Other Qualification Notes',
@@ -50,7 +52,8 @@ const tabData = [
         <p>The age cap for participation is 30 years of age.</p>
       </>
     ),
-    image: '/gsea/tabImage03.png',
+    image:
+      'https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/tabImage03.png',
   },
 ]
 
