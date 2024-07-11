@@ -5,7 +5,7 @@ import React from 'react'
 const GSEAEvent = () => {
   return (
     <div className="mb-8">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-7">
+      <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-7 overflow-hidden">
         <h3 className="text-[#4257E1] text-2xl font-semibold">
           GSEA 2023-2024
         </h3>

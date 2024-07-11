@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import { FaInstagramSquare } from 'react-icons/fa'
+
 import WhatsApp from './WhatsApp/WhatsApp'
 
 const Footer = () => {
@@ -38,12 +40,25 @@ const Footer = () => {
               <li>CONTACT US</li>
             </Link>
           </ul>
-
+          <div>
+            <Link
+              href="https://www.instagram.com/eobangalore?igsh=bTVzYWdoc2Jyd3U="
+              target="_blank"
+            >
+              <div className="text-xl text-white flex gap-2 items-center">
+                <p className="">Folow Us On:</p>
+                <Image src="/instagram.png" width={40} height={40} alt="" />
+              </div>
+            </Link>
+          </div>
           <hr className="w-full mt-5" />
         </div>
-        <p className="text-white text-lg text-center p-6">
+        <p className="text-white text-lg text-center pt-6">
           ENTREPRENEUR’S ORGANISATION Ⓒ 2024 - ALL RIGHTS RESERVED
         </p>
+        <Link href="/privacy-policy">
+          <p className="text-white text-lg text-center pb-6">PRIVACY POLICY</p>
+        </Link>
       </div>
       <WhatsApp />
     </>

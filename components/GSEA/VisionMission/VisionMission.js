@@ -3,7 +3,7 @@ import React from 'react'
 
 const VisionMission = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 overflow-hidden">
       <div className="flex flex-col py-5 mx-auto gap-8">
         <ul className="flex flex-col md:flex-row justify-center items-center gap-2">
           {visionMissionData.map((item) => {

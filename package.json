@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.2",
     "flowbite": "^2.4.1",

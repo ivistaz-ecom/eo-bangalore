@@ -11,7 +11,7 @@ const Faq = () => {
     setExpandedItem(expandedItem === id ? null : id)
   }
   return (
-    <div className="bg-[#4257E1]">
+    <div className="bg-[#4257E1] overflow-hidden">
       <div className="max-w-screen-xl mx-auto py-8 px-4 md:px-8 flex flex-col items-center">
         <h3 className="text-3xl md:text-5xl font-semibold text-white text-center">
           FREQUENTLY ASKED QUESTIONS
