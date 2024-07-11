@@ -74,14 +74,14 @@ const HaveAQuery = () => {
       try {
         // Simulating form submission
 
-        const token = await new Promise((resolve, reject) => {
-          window.grecaptcha
-            .execute('6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2', {
-              action: 'submit',
-            })
-            .then(resolve)
-            .catch(reject)
-        })
+        // const token = await new Promise((resolve, reject) => {
+        //   window.grecaptcha
+        //     .execute('6LdZwg0qAAAAABQII1HBE__7x1zk7emdMgtQqNS2', {
+        //       action: 'submit',
+        //     })
+        //     .then(resolve)
+        //     .catch(reject)
+        // })
 
         setTimeout(async () => {
           // Example of handling form submission with Axios
