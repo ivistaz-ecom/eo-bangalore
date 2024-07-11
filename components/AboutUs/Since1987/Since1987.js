@@ -3,7 +3,7 @@ import React from 'react'
 const Since1987 = () => {
   return (
     <div className="flex flex-col md:flex-row mb-3">
-      <div className="w-full md:w-1/2 bg-cover bg-center bg-[url('/about/since1987/image.png')]">
+      <div className="w-full md:w-1/2 bg-cover bg-center bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/since1987.png')]">
         <div className="h-96 md:h-[684px]"></div>
       </div>
       <div className="w-full md:w-1/2 bg-[#232526] flex items-center">
