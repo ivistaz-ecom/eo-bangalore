@@ -6,46 +6,45 @@ import React from 'react'
 const GlobalFootprint = () => {
   return (
     <>
-      <div className="bg-[#4257E1]">
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 py-16">
-          <h3 className="font-semibold text-3xl md:text-5xl text-white text-center">
-            Global Footprint
-          </h3>
-          <div className="border-2 border-[#FBC835] w-20 mb-3" />
-          <div className="flex justify-center">
-            <ul
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-0"
-              data-aos="zoom-in"
-            >
-              {globalFootprintData.map((item, index) => {
-                return (
-                  <li
-                    key={item.id}
-                    className={`relative border-dashed ${
-                      index < globalFootprintData.length - 3
-                        ? 'md:border-b-2 border-gray-300'
-                        : ''
-                    } ${
-                      index % 3 !== 2 ? 'md:border-r-2 border-gray-300' : ''
-                    } p-4`}
-                  >
-                    <div className="flex flex-col items-center gap-5 text-white bg-[#232526] md:bg-transparent py-5 px-10 rounded-md">
-                      <span className="text-3xl font-semibold">
-                        {item.count}
-                      </span>
-                      <p className="text-xl text-center">{item.title}</p>
-                    </div>
-                  </li>
-                )
-              })}
-            </ul>
+      <div className="relative" data-aos="zoom-in-up">
+        <div className="bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] h-[75vh] bg-cover bg-center">
+          <div className="max-w-screen-xl mx-auto flex flex-col items-center gap-8 py-16">
+            <h3 className="font-semibold text-3xl md:text-5xl text-white text-center z-50">
+              Global Footprint
+            </h3>
+            <div className="border-2 border-[#FBC835] w-20 mb-3" />
+            <div className="flex justify-center">
+              <ul
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-0 z-50"
+                data-aos="zoom-in"
+              >
+                {globalFootprintData.map((item, index) => {
+                  return (
+                    <li
+                      key={item.id}
+                      className={`relative border-dashed ${
+                        index < globalFootprintData.length - 3
+                          ? 'md:border-b-2 border-gray-300'
+                          : ''
+                      } ${
+                        index % 3 !== 2 ? 'md:border-r-2 border-gray-300' : ''
+                      } p-4`}
+                    >
+                      <div className="flex flex-col items-center gap-5 text-white bg-[#232526] md:bg-transparent py-5 px-10 rounded-md">
+                        <span className="text-3xl font-semibold">
+                          {item.count}
+                        </span>
+                        <p className="text-xl text-center">{item.title}</p>
+                      </div>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
         </div>
+        <div className="w-full bg-black/40 absolute inset-0 top-0 z-0"></div>
       </div>
-      <div
-        className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] bg-cover bg-center"
-        data-aos="zoom-in-up"
-      ></div>
       <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner03.png')] bg-cover bg-center flex flex-col gap-10 md:gap-20 justify-center items-center px-4">
         <div
           className="flex flex-col items-center gap-5 md:gap-10"
