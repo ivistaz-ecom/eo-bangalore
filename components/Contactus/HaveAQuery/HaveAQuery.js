@@ -1,10 +1,9 @@
-'use client'
-
+import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 import ContactUsForm from '@/components/ContactUsForm/ContactUsForm'
 import axios from 'axios'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
 
 const HaveAQuery = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +18,7 @@ const HaveAQuery = () => {
   const [successMessage, setSuccessMessage] = useState()
   const [button, setButton] = useState('SEND A MESSAGE')
   const [disabled, setBtnDisabled] = useState(false)
+  const [captchaToken, setCaptchaToken] = useState(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -43,39 +43,49 @@ const HaveAQuery = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!captchaToken) {
+      alert('Please verify the captcha')
+      return
+    }
+
     setButton('Please Wait')
     setBtnDisabled(true)
+
     if (validate()) {
-      console.log('Validated')
       try {
-        const response = await axios.post(
-          `https://docs.rie2025.com/wp-json/contact-form-7/v1/contact-forms/12/feedback`,
-          formData,
-          {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
+        // Simulating form submission
+        setTimeout(async () => {
+          // Example of handling form submission with Axios
+          try {
+            const response = await axios.post(
+              'https://docs.rie2025.com/wp-json/contact-form-7/v1/contact-forms/12/feedback',
+              formData,
+              {
+                headers: {
+                  'Content-Type': 'multipart/form-data',
+                },
+              }
+            )
+
+            if (response.data.status === 'mail_sent') {
+              setSuccessMessage('Thank you for your submission!')
+              setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                message: '',
+              })
+              setButton('SEND A MESSAGE')
+              setBtnDisabled(false)
+            } else {
+              setError('An error occurred. Please try again.')
+              setBtnDisabled(false)
+            }
+          } catch (err) {
+            setError('An error occurred. Please try again.')
+            setBtnDisabled(false)
           }
-        )
-        console.log(response)
-
-        if (response.data.status === 'mail_sent') {
-          console.log(response.data.status)
-          setSuccessMessage('Thank you for your submission!')
-
-          setFormData({
-            firstName: '',
-            lastName: '',
-            email: '',
-            message: '',
-          })
-
-          setButton('SEND A MESSAGE')
-          setBtnDisabled(false)
-        } else {
-          setError('An error occurred. Please try again.')
-          setBtnDisabled(false)
-        }
+        }, 1500) // Simulating delay for demo purposes
       } catch (err) {
         setError('An error occurred. Please try again.')
         setBtnDisabled(false)
@@ -86,13 +96,17 @@ const HaveAQuery = () => {
     }
   }
 
+  const handleCaptchaVerify = (token) => {
+    setCaptchaToken(token)
+  }
+
   return (
     <div className="bg-[#E6E6E6] pt-12 pb-24 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-4 md:px-0">
         <h3 className="font-semibold text-3xl md:text-5xl text-[#4257E1] mb-8 text-center md:text-left">
           Have A Query?
         </h3>
-        {successMessage}
+        {successMessage && <div>{successMessage}</div>}
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-4/6">
             <ContactUsForm
@@ -126,7 +140,6 @@ const HaveAQuery = () => {
             <Link
               href="https://maps.google.com/?q=12.971849,77.613235"
               target="_blank"
-              className=""
             >
               <div className="bg-white p-3 flex flex-col gap-3 border-b-4 group border-[#4257E1] hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
@@ -148,6 +161,13 @@ const HaveAQuery = () => {
               </div>
             </Link>
           </div>
+        </div>
+        <div className="mt-8">
+          <ReCAPTCHA
+            sitekey="6LdZwg0qAAAAAKnGl1OvKWrxbT28GSMhPfTHekAQ"
+            onChange={handleCaptchaVerify}
+            size="invisible"
+          />
         </div>
       </div>
     </div>
