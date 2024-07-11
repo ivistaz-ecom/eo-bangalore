@@ -2,7 +2,7 @@
 
 import ContactUsForm from '@/components/ContactUsForm/ContactUsForm'
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
