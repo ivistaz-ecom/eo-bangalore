@@ -23,7 +23,7 @@ const MeetTheTeam = () => {
             return (
               <li key={item.id}>
                 <div className="bg-white p-2 flex flex-col gap-3">
-                  <Image src={item.imageUrl} width={234} height={233} alt="" />
+                  <Image src={item.imageUrl} width={245} height={233} alt="" />
                   <div className="mt-2 mb-4">
                     <h4 className="text-[#4257E1] text-lg font-semibold">
                       {item.name}

@@ -23,7 +23,9 @@ const GlobalCommunity = () => {
                   <div className="flex flex-col items-center justify-center gap-3 p-3 rounded-full shadow-xl w-[280px] h-[280px]">
                     <Image src={item.iconUrl} width={54} height={40} alt="" />
                     <h4 className="text-[#DD0062] text-3xl">{item.title}</h4>
-                    <p className="text-[#232526] text-center">{item.desc}</p>
+                    <p className="text-[#232526] text-center w-10/12">
+                      {item.desc}
+                    </p>
                   </div>
                 </li>
               )
