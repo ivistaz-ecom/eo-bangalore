@@ -1,14 +1,25 @@
+'use client'
+
 import IndustriesServed from '@/components/AboutUs/IndustriesServed/IndustriesServed'
 import MemberCount from '@/components/AboutUs/MemberCount/MemberCount'
 import Header from '@/components/Header/Header'
 import React from 'react'
 
+import AOS from 'aos'
+import { useEffect } from 'react'
+
 const page = () => {
+  useEffect(() => {
+    AOS.init()
+  })
   return (
     <div>
       <Header bgColor="#4257E1" />
       <div className="bg-[#4257E1]">
-        <div className="max-w-screen-xl mx-auto px-5 md:px-10 py-10 md:py-20 text-center flex flex-col items-center text-white">
+        <div
+          className="max-w-screen-xl mx-auto px-5 md:px-10 py-10 md:py-20 text-center flex flex-col items-center text-white"
+          data-aos="fade-up"
+        >
           <h1 className="text-3xl md:text-5xl font-semibold mb-5 md:mb-7">
             Everything About EO Bangalore
           </h1>

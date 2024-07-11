@@ -1,3 +1,5 @@
+'use client'
+
 import ApplicationProcess from '@/components/GSEA/ApplicationProcess/ApplicationProcess'
 import Eligible from '@/components/GSEA/Eligible/Eligible'
 import Faq from '@/components/GSEA/Faq/Faq'
@@ -8,7 +10,14 @@ import VisionMission from '@/components/GSEA/VisionMission/VisionMission'
 import Header from '@/components/Header/Header'
 import React from 'react'
 
+import AOS from 'aos'
+import { useEffect } from 'react'
+
 const page = () => {
+  useEffect(() => {
+    AOS.init()
+  })
+
   return (
     <div>
       <Header bgColor="#4257E1" />
@@ -16,7 +25,6 @@ const page = () => {
         <div className="max-w-screen-xl mx-auto py-10 flex flex-col justify-center items-center text-white w-full h-full">
           <div className="relative w-full pb-[56.25%] shadow-xl">
             {' '}
-            {/* 16:9 Aspect Ratio */}
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EO%20GSEA%20EVENT%202024%20HIGH%20RES.mp4"

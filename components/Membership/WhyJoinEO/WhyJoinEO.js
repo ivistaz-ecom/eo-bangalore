@@ -9,7 +9,10 @@ const WhyJoinEO = () => {
         <h3 className="font-semibold text-3xl md:text-5xl text-white text-center">
           Why join EO?
         </h3>
-        <ul className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-7">
+        <ul
+          className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-7"
+          data-aos="fade-up"
+        >
           {memberWhyJoinEOData.map((item) => {
             return (
               <li key={item.id} className="w-[352px] rounded-lg p-5 bg-white">

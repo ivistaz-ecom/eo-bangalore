@@ -17,6 +17,7 @@ const MemberBenefit = () => {
               <li
                 key={item.id}
                 className="w-10/12 border border-[#C5CBF0] p-5 bg-white flex flex-col justify-center gap-3"
+                data-aos={item.data}
               >
                 <h4
                   className="text-2xl font-semibold"

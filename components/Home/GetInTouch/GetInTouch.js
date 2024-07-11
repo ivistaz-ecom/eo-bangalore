@@ -1,5 +1,7 @@
 'use client'
 
+import ContactUsForm from '@/components/ContactUsForm/ContactUsForm'
+import axios from 'axios'
 import React, { useState } from 'react'
 
 const GetInTouch = () => {
@@ -11,6 +13,10 @@ const GetInTouch = () => {
   })
 
   const [errors, setErrors] = useState({})
+  const [error, setError] = useState()
+  const [successMessage, setSuccessMessage] = useState()
+  const [button, setButton] = useState('SEND A MESSAGE')
+  const [disabled, setBtnDisabled] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -33,25 +39,63 @@ const GetInTouch = () => {
     return Object.keys(tempErrors).length === 0
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setButton('Please Wait')
+    setBtnDisabled(true)
     if (validate()) {
-      console.log(formData)
-      // Reset form
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: '',
-      })
+      console.log('Validated')
+      try {
+        const response = await axios.post(
+          `https://docs.rie2025.com/wp-json/contact-form-7/v1/contact-forms/12/feedback`,
+          formData,
+          {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          }
+        )
+        console.log(response)
+
+        if (response.data.status === 'mail_sent') {
+          console.log(response.data.status)
+          setSuccessMessage('Thank you for your submission!')
+
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            message: '',
+          })
+
+          setButton('SEND A MESSAGE')
+          setBtnDisabled(false)
+        } else {
+          setError('An error occurred. Please try again.')
+          setBtnDisabled(false)
+        }
+      } catch (err) {
+        setError('An error occurred. Please try again.')
+        setBtnDisabled(false)
+      }
+    } else {
+      setButton('SEND A MESSAGE')
+      setBtnDisabled(false)
     }
   }
+
   return (
-    <div className="flex flex-col md:flex-row mb-3">
-      <div className="w-full md:w-1/2 bg-cover bg-center bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/getInTouch.png')]">
+    <div className="flex flex-col md:flex-row mb-3 overflow-hidden">
+      <div
+        className="w-full md:w-1/2 bg-cover bg-center bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/getInTouch.png')]"
+        data-aos="fade-right"
+      >
         <div className="h-96 md:h-[684px]"></div>
       </div>
-      <div className="w-full md:w-1/2 bg-[#232526] flex items-center">
+      <div
+        className="w-full md:w-1/2 bg-[#232526] flex items-center"
+        data-aos="fade-left"
+      >
         <div className="p-6 md:ps-32 md:text-white flex flex-col items-start gap-4">
           <h3 className="text-3xl md:text-5xl text-white font-semibold">
             Get in touch
@@ -61,7 +105,7 @@ const GetInTouch = () => {
             within 24 hours on business days.
           </p>
 
-          <form className="w-full md:w-3/4" onSubmit={handleSubmit}>
+          {/* <form className="w-full md:w-3/4" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-4">
               <div>
                 <input
@@ -123,7 +167,15 @@ const GetInTouch = () => {
                 SEND A MESSAGE
               </button>
             </div>
-          </form>
+          </form> */}
+          <ContactUsForm
+            handleSubmit={handleSubmit}
+            formData={formData}
+            handleChange={handleChange}
+            errors={errors}
+            button={button}
+            disabled={disabled}
+          />
         </div>
       </div>
     </div>

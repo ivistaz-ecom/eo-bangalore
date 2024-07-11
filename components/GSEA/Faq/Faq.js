@@ -21,6 +21,7 @@ const Faq = () => {
             id="accordion-collapse"
             data-accordion="collapse"
             className="space-y-2"
+            data-aos="zoom-in"
           >
             {faqData.map((item) => (
               <AccordionMenu

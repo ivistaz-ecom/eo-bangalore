@@ -6,14 +6,17 @@ import CountUp from 'react-countup'
 
 const MemberCount = () => {
   return (
-    <ul className="flex flex-col md:flex-row justify-center gap-3 my-10 md:my-20">
+    <ul
+      className="flex flex-col md:flex-row justify-center gap-3 my-10 md:my-20"
+      data-aos="fade-down"
+    >
       {memberCount.map((item) => {
         return (
           <li
             key={item.id}
             className="border flex items-center justify-center border-[#D2D4E5] rounded-xl w-full md:w-[260px] h-[180px]"
           >
-            <div className="p-5 text-center space-y-5">
+            <div className="p-5 text-center space-y-5" data-aos="fade-up">
               <h4 className="text-4xl md:text-6xl font-semibold text-[#4257E1]">
                 <CountUp end={item.count} duration={2.5} />
               </h4>

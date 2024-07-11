@@ -9,7 +9,10 @@ const MembershipCriteria = () => {
         <h3 className="font-semibold text-3xl md:text-5xl text-[#232526] text-center">
           Membership Criteria
         </h3>
-        <ul className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-7">
+        <ul
+          className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-7"
+          data-aos="fade-down"
+        >
           {membershipCriteriaData.map((item) => {
             return (
               <li

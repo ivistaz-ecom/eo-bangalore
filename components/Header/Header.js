@@ -19,6 +19,7 @@ const Header = ({ bgColor }) => {
   return (
     <nav
       className={`border-b bg-[${bgColor}] border-slate-300 dark:bg-gray-900 dark:border-gray-700`}
+      data-aos="fade-down"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
         <Link

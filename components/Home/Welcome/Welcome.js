@@ -4,7 +4,10 @@ import React from 'react'
 
 const Welcome = () => {
   return (
-    <div className="bg-[#4257E1] flex flex-col justify-center items-center gap-7 py-24 text-white mb-4">
+    <div
+      className="bg-[#4257E1] flex flex-col justify-center items-center gap-7 py-24 text-white mb-4"
+      data-aos="fade-up"
+    >
       <h2 className="text-3xl md:text-5xl font-semibold text-center">
         Welcome
       </h2>

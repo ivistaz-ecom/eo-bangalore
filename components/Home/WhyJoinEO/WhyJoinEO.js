@@ -5,7 +5,7 @@ import React from 'react'
 
 const WhyJoinEO = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10" data-aos="fade-up">
       <div className="flex flex-col max-w-screen-xl mx-auto mt-7 gap-8">
         <h3 className="font-semibold text-3xl md:text-5xl text-[#232526] text-center">
           Why join EO?

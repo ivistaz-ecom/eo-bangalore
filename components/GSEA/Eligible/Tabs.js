@@ -61,8 +61,8 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 p-4">
+    <div className="flex flex-col md:flex-row" data-aos="fade-up">
+      <div className="md:w-1/2 p-4" data-aos="fade-right">
         <h2 className="text-2xl font-semibold">{tabData[activeTab].title}</h2>
         <div className="mb-4 text-lg h-[325px]">
           {tabData[activeTab].content}

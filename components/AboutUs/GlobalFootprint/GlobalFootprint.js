@@ -13,7 +13,10 @@ const GlobalFootprint = () => {
           </h3>
           <div className="border-2 border-[#FBC835] w-20 mb-3" />
           <div className="flex justify-center">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-0">
+            <ul
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-0"
+              data-aos="zoom-in"
+            >
               {globalFootprintData.map((item, index) => {
                 return (
                   <li
@@ -39,9 +42,15 @@ const GlobalFootprint = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] bg-cover bg-center"></div>
+      <div
+        className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner02.png')] bg-cover bg-center"
+        data-aos="zoom-in-up"
+      ></div>
       <div className="w-full h-[75vh] bg-[url('https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/EOBanaglore/banner03.png')] bg-cover bg-center flex flex-col gap-10 md:gap-20 justify-center items-center px-4">
-        <div className="flex flex-col items-center gap-5 md:gap-10">
+        <div
+          className="flex flex-col items-center gap-5 md:gap-10"
+          data-aos="fade-down"
+        >
           <h2 className="text-3xl md:text-5xl font-semibold text-gray-500 text-center">
             <span className="text-[#FFD1E6]">Connect </span>
             <span className="font-light">| </span>
@@ -53,7 +62,10 @@ const GlobalFootprint = () => {
             TOGETHER WE <br /> FLOURISH
           </h3>
         </div>
-        <div className="flex flex-col items-center gap-5 md:gap-10 text-white">
+        <div
+          className="flex flex-col items-center gap-5 md:gap-10 text-white"
+          data-aos="fade-up"
+        >
           <p className="text-lg md:text-2xl text-center w-full md:w-4/6">
             If you’re a founder or co-founder, majority shareholder or a partner
             then we’d like to hear from you.

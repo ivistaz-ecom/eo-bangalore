@@ -24,6 +24,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/3ZVy1tc45PF8btncViqxjB',
     desc: 'Bespoke Meals at hard to book & New Restaurants',
+    data: 'fade-right',
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/DTSxT3MDQqeC3ZH6lToIkm',
     desc: 'Workout, Hike or Play with fellow members',
+    data: 'fade-left',
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/FovDfub7Oc6IRgn4VwZmk8',
     desc: 'Make an Outsized impact on your world',
+    data: 'fade-right',
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/JJuGANm3PvTJqIuFQ1nePd',
     desc: 'Dive deep into your spiritual side.',
+    data: 'fade-left',
   },
   {
     id: 5,
@@ -56,6 +60,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/Ki3Ua5B14N1DVhCHjUigaG',
     desc: 'For all things Music & Concerts',
+    data: 'fade-right',
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/D5HRAkgtu3rD8nyGs1MaK7',
     desc: 'For all things Pets!',
+    data: 'fade-left',
   },
   {
     id: 7,
@@ -72,6 +78,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/Hvng5qquFMpI9JuC6ahdOX',
     desc: 'Showcase your Poker skills at the next EO Poker game',
+    data: 'fade-right',
   },
   {
     id: 8,
@@ -80,6 +87,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/JCIBIOsAKbO63b2GRWYGPn',
     desc: 'For things to do in Venice or Best Hotels in Ubud!',
+    data: 'fade-left',
   },
   {
     id: 9,
@@ -88,6 +96,8 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/IaegU5bAU9v1gxRBuf95wa',
     desc: 'All things Cricket (RCB, Team India), Formula-1 & Football among others',
+
+    data: 'fade-right',
   },
   {
     id: 10,
@@ -96,6 +106,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/LOGp25r7Wd4Hd2GVx8TPPo',
     desc: 'Connect with insiders for relevent Industry Needs & Leads',
+    data: 'fade-left',
   },
   {
     id: 11,
@@ -104,6 +115,7 @@ export const myEOGroupsData = [
     textColor: '',
     link: 'https://chat.whatsapp.com/CeEaNDeHOk37PaPwRf5HRs',
     desc: 'Connect for all things related to Health & Medical',
+    data: 'fade-right',
   },
 ]
 
@@ -343,42 +355,49 @@ export const memberBenefitData = [
     title: 'Forum',
     textColor: '#40B8A2',
     desc: 'What would you give for the ability to tap into a group of 7-10 fellow business owners who can open your eyes to options and solutions based on their real-life experiences?',
+    data: 'fade-right',
   },
   {
     id: 2,
     title: 'Executive Education',
     textColor: '#DD0062',
     desc: 'At the core of EO’s mission is an unrelenting commitment to helping entrepreneurs learn and grow on a personal and professional level. EO’s high-level programmes can’t be found elsewhere.',
+    data: 'fade-left',
   },
   {
     id: 3,
     title: 'Events',
     textColor: '#E87A66',
     desc: 'Held throughout the year, EO events offer provocative learning programs, renowned speakers and amazing social venues.',
+    data: 'fade-right',
   },
   {
     id: 4,
     title: 'Chapter Events',
     textColor: '#454545',
     desc: 'As an EO member, you will be invited to attend one-of-a-kind chapter events built around learning and engagement. You’ll be building relationships virtually or in-person with other entrepreneurs in your area.',
+    data: 'fade-left',
   },
   {
     id: 5,
     title: 'Mentorship',
     textColor: '#40B8A2',
     desc: 'EO Mentorship is a chapter-driven programme for EO designed to help EO members learn and grow as business owners.',
+    data: 'fade-right',
   },
   {
     id: 6,
     title: 'Path of Leadership',
     textColor: '#88BD43',
     desc: 'For more than 30 years, EO has been helping entrepreneurs grow as leaders in EO and their professional lives.',
+    data: 'fade-left',
   },
   {
     id: 7,
     title: 'My EO',
     textColor: '#DD0062',
     desc: 'Looking to share your passions with other entrepreneurs? MyEO provides endless possibilities for new groups, events and Forums to be created around specific interests or passions. Through MyEO, you can personalize your EO experience and connect with peers around the world.',
+    data: 'fade-right',
   },
 ]
 
@@ -462,18 +481,22 @@ export const gseaEventData = [
   {
     id: 1,
     imageUrl: '/gsea/image01.png',
+    data: 'fade-right',
   },
   {
     id: 2,
     imageUrl: '/gsea/image02.png',
+    data: 'fade-left',
   },
   {
     id: 3,
     imageUrl: '/gsea/image03.png',
+    data: 'fade-right',
   },
   {
     id: 4,
     imageUrl: '/gsea/image04.png',
+    data: 'fade-left',
   },
 ]
 
@@ -484,6 +507,7 @@ export const visionMissionData = [
     tagColor: '#DD0062',
     borderColor: '#4257E1',
     desc: 'Empowering student entrepreneurs to become the world’s most influential change makers.',
+    data: 'fade-right',
   },
   {
     id: 2,
@@ -491,6 +515,7 @@ export const visionMissionData = [
     tagColor: '#4257E1',
     borderColor: '#DD0062',
     desc: 'To give student entrepreneurs the opportunity to accelerate their success, challenge the status quo, connect to an instrumental peer group and make the greatest impact possible in their community.',
+    data: 'fade-left',
   },
 ]
 

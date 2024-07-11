@@ -4,14 +4,14 @@ const GlobalStudents = () => {
   return (
     <div className="mb-20">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center text-[#454545] text-center px-5 md:px-20 gap-8">
-        <h1 className="text-3xl md:text-5xl font-semibold">
+        <h1 className="text-3xl md:text-5xl font-semibold" data-aos="fade-down">
           THE GLOBAL STUDENTS <br /> ENTREPRENEUR AWARDS
         </h1>
-        <h2 className="text-xl md:text-3xl font-semibold">
+        <h2 className="text-xl md:text-3xl font-semibold" data-aos="fade-down">
           Creating a platform for young minds, <br /> rewarding them with the
           right guidance.
         </h2>
-        <p className="text-lg md:text-xl w-full md:w-10/12">
+        <p className="text-lg md:text-xl w-full md:w-10/12" data-aos="fade-up">
           Founded in 1998 by Saint Louis University, GSEA is now an
           Entrepreneurs’ Organization program which provides an eminent stage
           for young student entrepreneurs to showcase their business acumen. The

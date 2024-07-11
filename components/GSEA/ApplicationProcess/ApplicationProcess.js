@@ -11,7 +11,10 @@ const ApplicationProcess = () => {
         </h3>
         <div className="border-2 border-[#FBC835] w-20 mb-3" />
         <div className="flex justify-center">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <ul
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+            data-aos="zoom-in"
+          >
             {applicationProcessData.map((item, index) => {
               return (
                 <li

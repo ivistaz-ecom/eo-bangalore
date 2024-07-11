@@ -12,7 +12,7 @@ const GSEAEvent = () => {
         <ul className="grid grid-cols-1 md:grid-cols-2">
           {gseaEventData.map((item) => {
             return (
-              <li key={item.id} className="mx-2 my-5">
+              <li key={item.id} className="mx-2 my-5" data-aos={item.data}>
                 <Image src={item.imageUrl} width={536} height={320} alt="" />
               </li>
             )

@@ -11,6 +11,7 @@ const VisionMission = () => {
               <li
                 key={item.id}
                 className="rounded-lg p-5 bg-white flex flex-col justify-center items-center"
+                data-aos={item.data}
               >
                 <div className="border border-[#C5CBF0] rounded-3xl p-1 w-[175px] h-[50px] z-50">
                   <p

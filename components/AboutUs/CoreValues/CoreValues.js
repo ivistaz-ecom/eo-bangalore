@@ -10,7 +10,10 @@ const CoreValues = () => {
           Core Values
         </h3>
         <div className="border-2 border-[#FBC835] w-20 mb-3" />
-        <ul className="flex flex-wrap justify-center gap-3 md:gap-8">
+        <ul
+          className="flex flex-wrap justify-center gap-3 md:gap-8"
+          data-aos="fade-up"
+        >
           {coreValuesData.map((item) => {
             return (
               <li

@@ -10,7 +10,10 @@ const GlobalCommunity = () => {
           A global connected <br /> community.
         </h1>
         <div>
-          <ul className="flex items-center justify-center flex-wrap gap-16">
+          <ul
+            className="flex items-center justify-center flex-wrap gap-16"
+            data-aos="fade-up"
+          >
             {globalCommunityData.map((item) => {
               return (
                 <li

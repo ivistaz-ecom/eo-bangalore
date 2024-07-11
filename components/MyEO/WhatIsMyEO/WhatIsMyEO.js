@@ -3,7 +3,10 @@ import React from 'react'
 const WhatIsMyEO = () => {
   return (
     <div className="mt-10 mb-16">
-      <div className="max-w-screen-xl mx-auto p-6 md:p-10 flex flex-col items-center gap-10">
+      <div
+        className="max-w-screen-xl mx-auto p-6 md:p-10 flex flex-col items-center gap-10"
+        data-aos="fade-up"
+      >
         <h3 className="font-semibold text-3xl md:text-5xl text-[#4257E1] text-center">
           What is MyEO?
         </h3>

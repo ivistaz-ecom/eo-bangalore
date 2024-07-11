@@ -2,6 +2,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import Script from 'next/script'
 import Footer from '@/components/Footer/Footer'
+import 'aos/dist/aos.css'
 
 export const metadata = {
   title: 'Create Next App',
