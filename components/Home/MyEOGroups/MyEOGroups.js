@@ -1,5 +1,6 @@
 import React from 'react'
 import GroupCarousel from '../Carousel/GroupCarousel'
+import Link from 'next/link'
 
 const MyEOGroups = () => {
   return (
@@ -16,7 +17,9 @@ const MyEOGroups = () => {
           </p>
         </div>
         <div className="mt-auto bg-white/45 py-8" data-aos="fade-up">
-          <GroupCarousel />
+          <Link href="/my-eo">
+            <GroupCarousel />
+          </Link>
         </div>
       </div>
     </div>
