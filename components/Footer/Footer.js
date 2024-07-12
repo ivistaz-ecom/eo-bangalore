@@ -60,7 +60,7 @@ const Footer = () => {
           <p className="text-white text-lg text-center pb-6">PRIVACY POLICY</p>
         </Link>
       </div>
-      <WhatsApp />
+      {/* <WhatsApp /> */}
     </>
   )
 }
