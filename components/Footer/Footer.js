@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
 
-import { FaInstagramSquare } from 'react-icons/fa'
+import { FaInstagramSquare } from "react-icons/fa"
 
-import WhatsApp from './WhatsApp/WhatsApp'
+import WhatsApp from "./WhatsApp/WhatsApp"
 
 const Footer = () => {
   return (
@@ -54,7 +54,8 @@ const Footer = () => {
           <hr className="w-full mt-5" />
         </div>
         <p className="text-white text-lg text-center pt-6">
-          ENTREPRENEUR’S ORGANISATION Ⓒ 2024 - ALL RIGHTS RESERVED
+          ENTREPRENEUR’S ORGANISATION Ⓒ {new Date().getFullYear()} - ALL RIGHTS
+          RESERVED
         </p>
         <Link href="/privacy-policy">
           <p className="text-white text-lg text-center pb-6">PRIVACY POLICY</p>
