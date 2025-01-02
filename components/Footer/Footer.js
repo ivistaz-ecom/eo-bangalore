@@ -54,8 +54,8 @@ const Footer = () => {
           <hr className="w-full mt-5" />
         </div>
         <p className="text-white text-lg text-center pt-6">
-          ENTREPRENEUR’S ORGANISATION Ⓒ {new Date().getFullYear()} - ALL RIGHTS
-          RESERVED
+          ENTREPRENEUR’S ORGANISATION Ⓒ {new Date().getUTCFullYear()} - ALL
+          RIGHTS RESERVED
         </p>
         <Link href="/privacy-policy">
           <p className="text-white text-lg text-center pb-6">PRIVACY POLICY</p>
