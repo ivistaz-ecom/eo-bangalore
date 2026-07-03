@@ -33,9 +33,9 @@ const Footer = () => {
             <Link href="my-eo">
               <li>MY EO</li>
             </Link>
-            <Link href="https://www.rie2025.com/" target="_blank">
+            {/* <Link href="https://www.rie2025.com/" target="_blank">
               <li>RIE RIEMIX</li>
-            </Link>
+            </Link> */}
             <Link href="contact-us">
               <li>CONTACT US</li>
             </Link>
