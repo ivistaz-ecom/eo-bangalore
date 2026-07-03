@@ -163,7 +163,7 @@ const HaveAQuery = () => {
               </p>
             </div>
             <Link
-              href="https://maps.google.com/?q=12.971849,77.613235"
+              href="https://maps.app.goo.gl/7uoivygKFaXJHsEfA"
               target="_blank"
             >
               <div className="bg-white p-3 flex flex-col gap-3 border-b-4 group border-[#4257E1] hover:shadow-lg transition-shadow duration-300">
@@ -180,8 +180,7 @@ const HaveAQuery = () => {
                   Location
                 </h3>
                 <p className="text-base text-[#232526]">
-                  Registered Address: ‘Casa Fina’, No 5, Primrose Road, <br />
-                  Bangalore -560025, Karnataka
+                  Registered Address: EO House, Barton Center, 12th Floor, MG Road, Bangalore - 560001
                 </p>
               </div>
             </Link>

@@ -203,7 +203,7 @@ export const myEOTeam = [
 export const memberCount = [
   {
     id: 1,
-    count: '129',
+    count: '140',
     title: 'Members',
   },
   {
@@ -213,12 +213,12 @@ export const memberCount = [
   },
   {
     id: 1,
-    count: '11',
+    count: '13',
     title: 'Member Forums',
   },
   {
     id: 1,
-    count: '6',
+    count: '7',
     title: 'Spousal Forum',
   },
 ]
