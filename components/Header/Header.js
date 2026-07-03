@@ -162,7 +162,7 @@ const Header = ({ bgColor }) => {
                 GSEA
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="https://www.rie2025.com/"
                 target="_blank"
@@ -171,7 +171,7 @@ const Header = ({ bgColor }) => {
               >
                 RIE RIEMIX
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/contact-us"

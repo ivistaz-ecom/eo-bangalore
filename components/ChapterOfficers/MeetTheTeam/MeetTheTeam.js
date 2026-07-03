@@ -22,13 +22,16 @@ const MeetTheTeam = () => {
           {myEOTeam.map((item) => {
             return (
               <li key={item.id}>
-                <div className="bg-white p-2 flex flex-col gap-3">
+                <div className="bg-white p-2 flex flex-col gap-3 ">
                   <Image src={item.imageUrl} width={245} height={233} alt="" />
-                  <div className="mt-2 mb-4">
+                  <div className="mt-2 mb-2">
                     <h4 className="text-[#4257E1] text-lg font-semibold">
                       {item.name}
                     </h4>
-                    <p className="text-[#454545]">{item.designation}</p>
+                    <p
+                      className="text-[#454545] min-h-[50px]"
+                      dangerouslySetInnerHTML={{ __html: item.designation }}
+                    />
                   </div>
                 </div>
               </li>
