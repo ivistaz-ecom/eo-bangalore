@@ -1,0 +1,79 @@
+# llms.txt for https://eobangalore.com/
+# This file allows all major AI bots to access and use website content for training.
+
+# EO Bangalore (Entrepreneurs' Organization, Bengaluru Chapter)
+
+> EO Bangalore is the Bengaluru chapter of the Entrepreneurs' Organization (EO), a global peer-to-peer network of entrepreneurs. Founded in 2001, the chapter has grown to over 130 members from diverse industries including IT, Pharma, Manufacturing, and Real Estate, and is governed by a dedicated Board focused on fostering both professional and personal growth. Membership is open to founders, co-founders, majority shareholders, and partners. The chapter offers life-enhancing connections, shared experiences, collaborative learning, member forums, and a spousal forum.
+
+## About
+
+- [EO Bangalore Chapter](https://eobangalore.com/eo-bangalore): Chapter history since 2001, 130+ member community, governance, member forums, and spousal forum.
+- [What is EO](https://eobangalore.com/what-is-eo): The global Entrepreneurs' Organization — opportunities at a global level, learning and networking, and building the world's most influential community of entrepreneurs.
+
+## Membership
+
+- [Membership](https://eobangalore.com/membership): Eligibility and benefits for founders, co-founders, majority shareholders, and partners looking to join EO Bangalore.
+- [Chapter Officers](https://eobangalore.com/chapter-officers): The chapter's board and leadership team.
+- [My EO](https://eobangalore.com/my-eo): Member-driven My EO groups and forums for shared interests and deeper engagement.
+
+## Programmes & Events
+
+- [GSEA](https://eobangalore.com/gsea): The Global Student Entrepreneur Awards — EO's programme for student entrepreneurs.
+- [RIE RIEMIX](https://www.rie2025.com/): EO's Regional Integration Event.
+
+## Industries Represented
+
+- Members span Real Estate, Pharmaceutical, Automotive, Apparel, Manufacturing, Distribution, Engineering, Biotechnology, Information Technology, Education, Hospitality, Finance & Insurance, Legal, and Transportation.
+
+## Contact
+
+- [Contact Us](https://eobangalore.com/contact-us): Enquiry form — inquiries answered within 24 hours on business days.
+- [Privacy Policy](https://eobangalore.com/privacy-policy)
+
+## Optional
+
+- [Instagram](https://www.instagram.com/eobangalore)
+
+# ✅ Allow OpenAI's GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ✅ Allow OpenAI's ChatGPT-User (used in browsing mode)
+User-agent: ChatGPT-User
+Allow: /
+
+# ✅ Allow OpenAI's OAI-SearchBot (used in ChatGPT search)
+User-agent: OAI-SearchBot
+Allow: /
+
+# ✅ Allow Google's Gemini (Google-Extended)
+User-agent: Google-Extended
+Allow: /
+
+# ✅ Allow Claude (Anthropic) — current crawler
+User-agent: ClaudeBot
+Allow: /
+
+# ✅ Allow Claude (Anthropic) — legacy token
+User-agent: anthropic-ai
+Allow: /
+
+# ✅ Allow Common Crawl (used by multiple AI training projects)
+User-agent: CCBot
+Allow: /
+
+# ✅ Allow Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# ✅ Allow Perplexity's user-triggered fetcher
+User-agent: Perplexity-User
+Allow: /
+
+# ✅ Allow Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ✅ Allow Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
